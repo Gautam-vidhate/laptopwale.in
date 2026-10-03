@@ -1,0 +1,4021 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+    
+  <!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N7HJ9Y0XHF');
+</script>
+  
+    
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaptopWale | Best Refurbished Laptops & Second Hand Laptops in India</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="laptopwale.in/images/favicon.png" />
+    <style>
+        :root {
+            --bg: #ffffff;
+            --secondary-bg: #f5f5f7;
+            --accent: #C12328; 
+            --accent-dark: #005fb8;
+            --text-main: #1d1d1f;
+            --text-muted: #86868b;
+            --glass: rgba(255, 255, 255, 0.85);
+        }
+
+        body { 
+            background-color: var(--bg);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+            margin: 0; padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* 1. Promo Bar - Dark &amp; Sleek */
+       .promo-bar {
+    background: #F5F5F7;
+    color: #000;
+    font-size: 12px;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.promo-track {
+    display: flex;
+    width: max-content;
+    animation: scrollLeft 25s linear infinite; /* 🔥 slow speed */
+}
+
+.promo-content {
+    display: flex;
+    align-items: center;
+    padding-right: 50px; /* gap between loops */
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+        /* 2. Navbar with Larger Logo */
+        .navbar-main {
+            background: var(--glass) !important;
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            padding: 15px 0; /* Vertical padding badhai */
+        }
+
+        .navbar-brand img { 
+            height: 42px; /* Logo bada kiya */
+            width: auto;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+        .navbar-brand:hover img { transform: scale(1.05); }
+
+        .nav-link-item {
+            font-weight: 500;
+            font-size: 14px;
+            color: var(--text-main) !important;
+            margin: 0 15px;
+            opacity: 0.7;
+            transition: all 0.2s ease;
+        }
+        .nav-link-item:hover { opacity: 1; color: var(--accent) !important; }
+
+        /* 3. Action Icons &amp; Badges */
+        .action-icon {
+            color: var(--text-main);
+            margin-left: 22px;
+            position: relative;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+        }
+        .action-icon svg { width: 22px; height: 22px; stroke-width: 1.4; transition: color 0.2s; }
+        .action-icon:hover { color: var(--accent); }
+
+        .badge-dot {
+            position: absolute;
+            top: -8px; right: -10px;
+            background: var(--accent);
+            color: white;
+            font-size: 10px;
+            font-weight: 700;
+            min-width: 18px;
+            height: 18px;
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            border: 2px solid #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* 4. Luxury Category Pills */
+        .category-wrapper {
+            background: var(--bg);
+            border-bottom: 1px solid #d2d2d7;
+            padding: 20px 0;
+        }
+        .category-container {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+        .category-container::-webkit-scrollbar { display: none; }
+
+        .cat-pill {
+            padding: 10px 24px;
+            background: var(--secondary-bg);
+            border-radius: 50px;
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid transparent;
+            white-space: nowrap;
+        }
+
+        .cat-pill:hover {
+            background: #ffffff;
+            border-color: var(--accent);
+            color: var(--accent);
+            box-shadow: 0 4px 12px rgba(0,113,227,0.12);
+            transform: translateY(-2px);
+        }
+
+        .new-tag {
+            background: var(--accent);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-size: 10px;
+            font-weight: 700;
+            margin-right: 8px;
+            text-transform: uppercase;
+        }
+
+        /* 5. Search Box Focus */
+        #searchBox {
+            display: none;
+            background: #ffffff;
+            padding: 30px 0;
+            border-bottom: 1px solid #d2d2d7;
+            position: absolute;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .search-input {
+            border: none;
+            font-size: 1.8rem;
+            font-weight: 500;
+            width: 100%;
+            outline: none;
+            color: var(--text-main);
+        }
+
+        @media (max-width: 991px) {
+            .navbar-brand img { height: 32px; }
+            .category-container { justify-content: flex-start; padding-left: 20px; }
+        }
+        
+/* --- Search Box &amp; Live Suggestions Styling --- */
+#searchBox {
+    display: none;
+    background: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #d2d2d7;
+    position: absolute;
+    width: 100%;
+    z-index: 1100;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+#searchSuggestions {
+    position: absolute;
+    top: 100%;
+    left: 12px;
+    right: 12px;
+    background: #fff;
+    border-radius: 0 0 18px 18px;
+    max-height: 420px;
+    overflow-y: auto;
+    display: none;
+    border: 1px solid #e5e5e7;
+    border-top: none;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* Scrollbar styling */
+#searchSuggestions::-webkit-scrollbar { width: 6px; }
+#searchSuggestions::-webkit-scrollbar-thumb { background: #d2d2d7; border-radius: 10px; }
+
+/* Item Design */
+.search-item-link { text-decoration: none !important; color: inherit !important; display: block; }
+.search-item-link:hover { background-color: #f5f5f7; }
+
+.search-img-container {
+    width: 50px; height: 50px; min-width: 50px;
+    background: #fff; border-radius: 8px; border: 1px solid #eee;
+    display: flex; align-items: center; justify-content: center; overflow: hidden;
+}
+.search-img-container img { max-width: 90%; max-height: 90%; object-fit: contain; }
+
+.search-p-name { font-weight: 600; font-size: 14px; color: #1d1d1f; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.search-p-meta { font-size: 11px; color: #86868b; }
+.search-p-price { font-weight: 700; color: #C12328; font-size: 14px; }
+
+.view-all-btn {
+    display: block; text-align: center; padding: 12px;
+    background: #fbfbfd; color: #0071e3; font-weight: 600;
+    font-size: 13px; text-decoration: none; border-top: 1px solid #eee;
+}
+/* ================= PREMIUM MOBILE NAVBAR ================= */
+@media (max-width: 991px) {
+
+    .navbar-main{
+        position: sticky;
+        top: 0;
+        z-index: 1100;
+        padding: 10px 14px !important;
+        background: rgba(255,255,255,0.95) !important;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+        box-shadow: 0 4px 18px rgba(0,0,0,0.04);
+    }
+
+    .navbar-brand img{
+        height: 30px !important;
+        width: auto;
+    }
+
+    /* Toggle Button Better */
+    .navbar-toggler{
+        width: 42px;
+        height: 42px;
+        border: none;
+        border-radius: 12px;
+        background: #f5f5f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+        padding: 0;
+    }
+
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+
+    /* Default bootstrap icon hide */
+    .navbar-toggler-icon{
+        display: none;
+    }
+
+    /* Custom icon */
+    .navbar-toggler::before{
+        content: "\f0c9";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        font-size: 18px;
+        color: #1d1d1f;
+    }
+
+    /* Mobile menu */
+    .navbar-collapse{
+        margin-top: 14px;
+        background: #fff;
+        border-radius: 18px;
+        padding: 14px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    /* Menu items with icons */
+    .nav-link-item{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 13px 14px;
+        margin: 6px 0;
+        border-radius: 14px;
+        font-size: 14px;
+        font-weight: 600;
+        background: #fafafa;
+        transition: 0.3s;
+    }
+
+    .nav-link-item:hover{
+        background: #f5f5f7;
+        color: var(--accent) !important;
+        transform: translateX(4px);
+    }
+
+    /* Auto icon before menu */
+    .nav-link-item::before{
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        font-size: 14px;
+        width: 18px;
+        text-align: center;
+        color: var(--accent);
+    }
+
+    /* Example icons for menu items */
+    .nav-link-item.home::before{
+        content: "\f015";
+    }
+
+    .nav-link-item.shop::before{
+        content: "\f07a";
+    }
+
+    .nav-link-item.category::before{
+        content: "\f03a";
+    }
+
+    .nav-link-item.contact::before{
+        content: "\f0e0";
+    }
+
+    /* Right icons */
+    .action-icon{
+        width: 38px;
+        height: 38px;
+        background: #f5f5f7;
+        border-radius: 12px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .action-icon svg{
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Category pills */
+    .category-container{
+        padding: 0 14px;
+        gap: 10px;
+    }
+
+    .cat-pill{
+        font-size: 13px;
+        padding: 10px 16px;
+        border-radius: 30px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+}
+.mobile-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border-radius: 14px;
+    background: #f8f9fa;
+    color: #1d1d1f;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.mobile-nav-link i {
+    font-size: 18px;
+    color: #C12328;
+    min-width: 20px;
+}
+
+.mobile-nav-link:hover {
+    background: #f1f5f9;
+    color: #C12328;
+    transform: translateX(5px);
+}
+.desktop-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desktop-login svg {
+    width: 22px;
+    height: 22px;
+}
+
+/* Mobile hide */
+@media (max-width: 768px) {
+    .desktop-login {
+        display: none !important;
+    }
+}
+.purchase-popup {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    width: 290px;
+    background: linear-gradient(135deg, #FFFFFF, #F5F5F7);
+    border: 1px solid rgba(193, 35, 40, 0.12);
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    transform: translateX(120%);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.purchase-popup.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.purchase-popup.hidden {
+    transform: translateX(120%);
+    opacity: 0;
+}
+
+.icon-wrap {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    border-radius: 50%;
+    background: rgba(193, 35, 40, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.icon-wrap span {
+    color: #C12328;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.popup-info {
+    flex: 1;
+}
+
+.top-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.name {
+    color: #C12328;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+.city {
+    font-size: 13px;
+    color: #555;
+}
+
+.product-text {
+    font-size: 13px;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.time-text {
+    font-size: 11px;
+    color: #888;
+}
+
+.close-btn {
+    margin-left: auto;
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #999;
+}
+
+.close-btn:hover {
+    color: #C12328;
+}
+@media (max-width: 768px) {
+    .purchase-popup {
+        right: 12px;
+        bottom: 70px; /* mobile me thoda upar */
+        width: 260px;
+        padding: 10px;
+    }
+
+    .icon-wrap {
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+    }
+
+    .icon-wrap span {
+        font-size: 16px;
+    }
+
+    .name,
+    .city,
+    .product-text {
+        font-size: 12px;
+    }
+
+    .time-text {
+        font-size: 10px;
+    }
+}
+    </style>
+<style></style></head>
+<body>
+
+<div style="background: linear-gradient(90deg, #1d1d1f, #2c3e50); color: #fff; padding: 6px 15px; font-size: 12px; text-align: center; display: flex; justify-content: center; align-items: center; gap: 10px; z-index: 9999; position: relative;">
+    <span style="background: #25D366; color: #fff; padding: 2px 8px; border-radius: 12px; font-weight: 700; font-size: 10px; text-transform: uppercase;">Client Demo Preview</span>
+    <span>⚡ Interactive Demo for LaptopWale presentation | Fully responsive static showcase</span>
+</div>
+
+
+<div class="promo-bar">
+    <div class="promo-track">
+        <div class="promo-content">
+            Contact Us <a href="tel:+919713649049">+91 97136 49049</a>   |  
+            Free delivery order above 24999/-   |  
+            7 Days Replacement | 6 Months Warranty   |  
+            32 point Quality tested
+        </div>
+
+        <!-- duplicate for seamless loop -->
+        <div class="promo-content">
+            Contact Us <a href="tel:+919713649049">+91 97136 49049</a>   |  
+            Free delivery order above 24999/-    |  
+            7 Days Replacement | 6 Months Warranty   |  
+            32 point Quality tested
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-main sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="https://laptopwale.in/">
+            <img src="new%20images/newlogo.png" alt="TechStore" onerror="this.src='https://via.placeholder.com/180x50/ffffff/0071e3?text=TECHSTORE'" />
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar" aria-controls="mobileSidebar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+        <path d="M3 12h18M3 6h18M3 18h18"/>
+    </svg>
+</button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="techNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link nav-link-item" href="products">Store</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-item" href="new_laptop">New Laptop</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-item" href="refurbished">Refurbished</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-item" href="accessories">Accessories</a></li>
+              <li class="nav-item"><a class="nav-link nav-link-item" href="valuation/valuation_form">Sell Laptop</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-item" href="blogs">Blogs</a></li>
+
+
+            </ul>
+        </div>
+
+        <div class="d-flex align-items-center">
+<a href="javascript:void(0)" class="action-icon" onclick="toggleSearch()" title="Search">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <circle cx="11" cy="11" r="8"/>
+        <path d="m21 21-4.35-4.35"/>
+    </svg>
+</a>             
+<!--<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></p></svg>-->
+            
+            <!--<a href="wishlist.php" class="action-icon d-none d-sm-flex" title="Wishlist">-->
+            <!--    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>-->
+            <!--    -->
+            <!--</a>-->
+            <a href="cart" class="action-icon" title="Bag">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span class="badge-dot">0</span>
+                
+            </a>
+            <a href="login" class="action-icon desktop-login" title="Login">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20 21a8 8 0 0 0-16 0"/>
+        <circle cx="12" cy="7" r="4"/>
+    </svg>
+</a>
+            <a href="track-order" class="action-icon" title="Track Order">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path d="M3 7h13v10H3z"/>
+        <path d="M16 10h3l2 3v4h-5"/>
+        <circle cx="7.5" cy="17.5" r="1.5"/>
+        <circle cx="17.5" cy="17.5" r="1.5"/>
+    </svg>
+</a>
+        </div>
+    </div>
+</nav>
+<div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileSidebar">
+    <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title fw-bold">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <ul class="navbar-nav mobile-nav-list">
+
+            <li>
+                <a href="products" class="mobile-nav-link">
+                    <i class="bi bi-shop"></i>
+                    <span>Store</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="new_laptop" class="mobile-nav-link">
+                    <i class="bi bi-laptop"></i>
+                    <span>New Laptop</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="refurbished" class="mobile-nav-link">
+                    <i class="bi bi-arrow-repeat"></i>
+                    <span>Refurbished</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="accessories" class="mobile-nav-link">
+                    <i class="bi bi-headphones"></i>
+                    <span>Accessories</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="valuation/valuation_form" class="mobile-nav-link">
+                    <i class="bi bi-cash-stack"></i>
+                    <span>Sell Laptop</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="blogs" class="mobile-nav-link">
+                    <i class="bi bi-journal-text"></i>
+                    <span>Blogs</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<div class="category-wrapper">
+    <div class="container">
+        <div class="category-container">
+                            <a href="gaming_laptops" class="cat-pill">
+                                        <span>Gaming Laptops</span>
+                </a>
+                            <a href="apple_laptops.php" class="cat-pill">
+                                        <span>MacBook Pro</span>
+                </a>
+                            <a href="business_laptops.php" class="cat-pill">
+                                        <span>Business</span>
+                </a>
+                    </div>
+    </div>
+</div>
+<div id="searchBox" style="display:none;">
+    <div class="container position-relative">
+        <input type="text" id="searchInput" class="search-input" placeholder="Search Laptops,Brand..." />
+
+        <div id="searchSuggestions"></div>
+    </div>
+</div>
+
+<div id="purchasePopup" class="purchase-popup show">
+    <div class="icon-wrap">
+        <span>✓</span>
+    </div>
+
+    <div class="popup-info">
+        <div class="top-row">
+            <span class="name" id="customerName">Arjun</span>
+            <span class="city" id="customerCity">from Jaipur</span>
+            <button class="close-btn" onclick="hidePopup()">×</button>
+        </div>
+
+        <div class="product-text" id="purchaseText">just bought Lenovo i5 11th Gen</div>
+
+        <div class="time-text">
+            <span id="timeAgo">5m ago</span> • Verified
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+   function toggleSearch() {
+    const box = document.getElementById("searchBox");
+
+    if (box.style.display === "none" || box.style.display === "") {
+        box.style.display = "block";
+        document.getElementById("searchInput").focus();
+    } else {
+        box.style.display = "none";
+        document.getElementById("searchSuggestions").style.display = "none";
+    }
+}
+
+document.getElementById("searchInput").addEventListener("keyup", function () {
+    let query = this.value.trim();
+    let suggestionBox = document.getElementById("searchSuggestions");
+
+    if (query.length &gt;= 1) {
+        fetch(window.location.pathname + "?ajax=search&amp;q=" + encodeURIComponent(query))
+            .then(response =&gt; response.text())
+            .then(data =&gt; {
+                suggestionBox.innerHTML = data;
+                suggestionBox.style.display = "block";
+            });
+    } else {
+        suggestionBox.style.display = "none";
+    }
+});
+
+document.addEventListener("click", function(e){
+    const searchArea = document.getElementById("searchBox");
+
+    if (!searchArea.contains(e.target) &amp;&amp; !e.target.closest(".action-icon")) {
+        searchArea.style.display = "none";
+        document.getElementById("searchSuggestions").style.display = "none";
+    }
+});
+
+/* Client demo mode - redirect disabled */
+const messages = [
+    {
+        name: "Arjun",
+        city: "Jaipur",
+        product: "just bought Lenovo i5 11th Gen",
+        time: "5m ago"
+    },
+    {
+        name: "Rahul",
+        city: "Delhi",
+        product: "just bought HP i7 12th Gen",
+        time: "2m ago"
+    },
+    {
+        name: "Priya",
+        city: "Mumbai",
+        product: "just bought Dell i5 10th Gen",
+        time: "7m ago"
+    },
+    {
+        name: "Ankit",
+        city: "Indore",
+        product: "just bought Asus Ryzen 5",
+        time: "1m ago"
+    },
+    {
+        name: "Sneha",
+        city: "Bhopal",
+        product: "just bought Acer i3 11th Gen",
+        time: "3m ago"
+    }
+];
+
+let index = 0;
+const popup = document.getElementById("purchasePopup");
+
+function showNextPopup() {
+    const msg = messages[index];
+
+    document.getElementById("customerName").innerText = msg.name;
+    document.getElementById("customerCity").innerText = "from " + msg.city;
+    document.getElementById("purchaseText").innerText = msg.product;
+    document.getElementById("timeAgo").innerText = msg.time;
+
+    popup.classList.remove("hidden");
+    popup.classList.add("show");
+
+    // 5 sec visible
+    setTimeout(() =&gt; {
+        popup.classList.remove("show");
+        popup.classList.add("hidden");
+    }, 5000);
+
+    index = (index + 1) % messages.length;
+}
+
+// first popup after 10 sec
+setTimeout(() =&gt; {
+    showNextPopup();
+
+    // then repeat every 15 sec
+    setInterval(showNextPopup, 15000);
+}, 10000);
+
+function hidePopup() {
+    popup.classList.remove("show");
+    popup.classList.add("hidden");
+}
+</script>
+
+
+
+
+    
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "Laptopwale",
+  "url": "https://laptopwale.in/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://laptopwale.in/{search_term_string}https://laptopwale.in/",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+    
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Best Refurbished Laptops in India | Second hand laptops in India | Laptopwale</title>
+
+<meta name="description" content="Buy the best refurbished laptops in India at LaptopWale. Explore high-quality second hand laptops in India with warranty, top brands, and affordable pricesâ€”perfect for students, professionals, and gamers. Save big with warranty, fast delivery, and a smart choice for your tech needs." />
+
+
+<link rel="canonical" href="https://laptopwale.in/" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+
+<style>
+
+body{
+}
+/* =========================
+GLOBAL
+========================= 
+    background:#f3f3f3;
+    font-family:'Poppins',sans-serif;
+}
+
+section{
+    background:#fff;
+    margin-bottom:10px;
+    padding:12px;
+    border-radius:8px;
+}
+
+/* =========================
+HERO SECTION
+========================= */
+
+
+body{
+    background:#f3f3f3;
+    font-family:'Poppins',sans-serif;
+}
+.hero-wrapper{
+    margin:20px;
+}
+
+.hero-box{
+    height:500px;
+    border-radius:10px;
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:#fff;
+}
+.hero-box{
+    /*height:500px;*/
+    border-radius:10px;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    text-align:center;
+    background-color:#222;
+}
+
+.hero-box::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:1;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero-content h2{
+    font-size:40px;
+    font-weight:700;
+    text-shadow:2px 2px 15px rgba(0,0,0,.7);
+    text-align:left;
+    line-height:1.3;
+    max-width:600px;
+    margin-left:-40px;
+}
+
+/* =========================
+FX STATS
+========================= */
+.fx-stats{
+    background:#fff;
+}
+
+.fx-card{
+    background:#F6F7FB;
+    border-radius:14px;
+    padding:24px 12px;
+    transition:.3s;
+}
+
+.fx-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+}
+
+.fx-icon{
+    width:60px;
+    height:60px;
+    margin:0 auto 12px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:26px;
+}
+
+.fx-yellow{background:#fff7e6;color:#faad14;}
+.fx-blue{background:#e6f0ff;color:#2f6fed;}
+.fx-green{background:#e6f7f0;color:#0a9d6c;}
+.fx-orange{background:#fff2e8;color:#fa541c;}
+
+/* =========================
+SHOP BY BRANDS
+========================= */
+.brand-section{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.brand-title{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:30px;
+    color:#C12328;
+}
+
+.brand-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:25px;
+}
+
+.brand-card{
+
+background:#eaeaea;
+border-radius:18px;
+height:130px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+transition:0.3s;
+
+}
+
+.brand-card img{
+
+max-width:110px;
+max-height:60px;
+object-fit:contain;
+
+}
+
+.brand-card:hover{
+
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+}
+
+ .brand-card {
+    min-width: 90px;
+    height: 99px;
+    flex: 0 0 auto;
+    border-radius: 12px;
+  }
+
+  .brand-card img {
+    max-width: 70px;
+    max-height: 35px;
+  }
+
+
+
+/* =========================
+LAPTOP SECTION
+========================= */
+.laptop-section{
+    margin-top:60px;
+}
+
+.laptop-title{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:30px;
+    color:#C12328;
+}
+
+.laptop-card{
+    border:1px solid #F6F6F6;
+    background:#fff;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+.laptop-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+}
+
+.laptop-card img{
+    width:100%;
+    height:150px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+.laptop-card h4{
+    font-size:14px;
+    font-weight:600;
+}
+
+.laptop-price{
+    color:#1e60b3;
+    font-weight:700;
+    font-size:18px;
+}
+
+/* =========================
+TOP ELECTRONICS BRANDS PREMIUM
+========================= */
+.electronics-section{
+    margin-top:60px;
+}
+
+.electronics-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+    gap:10px;
+}
+
+.electronics-header h2{
+    font-size:22px;
+    font-weight:700;
+    margin:0;
+    color:#111;
+}
+
+.electronics-header span{
+    color:#C12328;
+    font-weight:600;
+    font-size:14px;
+}
+
+.electronics-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.electronics-card{
+    min-height:220px;
+    border-radius:22px;
+    padding:25px;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    align-items:flex-end;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s ease;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.electronics-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 14px 30px rgba(0,0,0,.12);
+}
+
+.electronics-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to top,rgba(0,0,0,.68),rgba(0,0,0,.25),rgba(0,0,0,.08));
+    z-index:1;
+}
+
+.electronics-content{
+    position:relative;
+    z-index:2;
+    color:#fff;
+}
+
+.electronics-content h3{
+    font-size:22px;
+    font-weight:700;
+    margin:10px 0 8px;
+}
+
+.electronics-content p{
+    font-size:14px;
+    margin-bottom:12px;
+    line-height:1.5;
+}
+
+.shop-btn{
+    display:inline-block;
+    padding:8px 18px;
+    background:#fff;
+    color:#111;
+    border-radius:25px;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:600;
+}
+
+.iphone-card{
+    background:url('laptopwale.in/new%20images/b11.png') center/cover no-repeat;
+}
+
+.realme-card{
+    background:url('laptopwale.in/new%20images/b12.png') center/cover no-repeat;
+}
+
+.xiaomi-card{
+    background:url('laptopwale.in/new%20images/b13.png') center/cover no-repeat;
+}
+
+/* =========================
+COMPARE SECTION
+========================= */
+.compare-wrapper{
+    position:relative;
+    width:calc(100% - 40px);
+    margin:30px auto;
+    height:550px;
+    overflow:hidden;
+    user-select:none;
+    background:#eee;
+    border-radius:10px;
+}
+
+.compare-wrapper img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+/* SLIDER HANDLE */
+.slider-handle{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:50%;
+    width:4px;
+    background:#fff;
+    cursor:ew-resize;
+    transform:translateX(-50%);
+    z-index:10;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* CENTER ICON */
+.slider-handle::after{
+    content:"â†”";
+    width:42px;
+    height:42px;
+    background:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#333;
+    font-size:18px;
+    font-weight:700;
+    box-shadow:0 0 12px rgba(0,0,0,.25);
+}
+
+.img-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    height:100%;
+    overflow:hidden;
+    z-index:2;
+    border-right:3px solid #fff;
+}
+
+/* =========================
+VIDEO REVIEW
+========================= */
+.story-card{
+    width:100%;
+    height:420px;
+    border-radius:15px;
+    overflow:hidden;
+    background:#000;
+    position:relative;
+}
+
+.story-card video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* =========================
+LIVE BANNER
+========================= */
+.live-banner {
+    width:100%; min-height:500px; background:url('laptopwale.in/new%20images/banner1.png') no-repeat center center; background-size:contain; display:flex; align-items:center; justify-content:space-between; padding:20px 60px; color:#fff; border-radius:16px; padding:22px 10px;margin-bottom: 50px;margin-top: 50px;
+}
+
+/* =========================
+WHY CHOOSE
+========================= */
+.why-choose{
+    background:#f9fafc;
+}
+
+.feature-card{
+    background:#fff;
+    border-radius:16px;
+    padding:22px 10px;
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.icon{
+    width:60px;
+    height:60px;
+    margin:0 auto 12px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:26px;
+}
+
+.green{background:#e6f7f0;color:#0a9d6c;}
+.blue{background:#e6f0ff;color:#2f6fed;}
+.orange{background:#fff1e6;color:#ff7a00;}
+.purple{background:#f3e8ff;color:#7a3cff;}
+.yellow{background:#fff7e6;color:#d48806;}
+.red{background:#ffeaea;color:#ff4d4f;}
+
+.story-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.audio-control-tag {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: rgba(193, 35, 40, 0.7);
+    color: #fff;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.audio-control-tag:hover {
+    background: #C12328;
+}
+
+/* =========================
+TABLET
+========================= */
+@media(max-width:992px){
+    .brand-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .electronics-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+/* =========================
+MOBILE
+========================= */
+@media(max-width:768px){
+
+    body{
+        background:#f1f3f6;
+        font-size:14px;
+    }
+
+h6 {
+        font-size: 10px !important;
+     font-weight: 700 !important;
+
+    }
+    .hero-wrapper{
+        margin:0;
+    }
+        .brand-card {
+        min-width: 90px;
+        height: 86px;
+        flex: 0 0 auto;
+        border-radius: 12px;
+    }
+    
+        .brand-card img {
+        max-width: 53px;
+        max-height: 35px;
+    }
+   
+    .hero-box{
+        height:auto;
+        aspect-ratio:25/9;
+        border-radius:0;
+    }
+
+    .hero-content h2{
+        font-size:16px;
+        text-align:center;
+        margin-left:0;
+    }
+
+   .brand-grid {
+        display: flex !important;
+        overflow-x: auto;
+        gap: 12px;
+        scrollbar-width: none;      /* Firefox */
+        -ms-overflow-style: none;   /* IE/Edge */
+    }
+
+    .brand-grid::-webkit-scrollbar {
+        display: none;              /* Chrome, Safari */
+    }
+   
+
+    .laptopSlider,
+    .electronics-grid{
+        display:flex !important;
+        overflow-x:auto;
+        gap:14px;
+    }
+
+    .electronics-card{
+        min-width:280px;
+        min-height:190px;
+        flex:0 0 auto;
+        padding:18px;
+        border-radius:18px;
+    }
+
+    .laptop-card {
+    min-width: 160px;
+    flex: 0 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .laptop-card img {
+    height: 100px;
+  }
+
+  .laptop-card h4 {
+    font-size: 13px;
+    height: 35px;
+    overflow: hidden;
+  }
+
+    .compare-wrapper{
+        width:100%;
+        height:200px;
+    }
+
+    .live-banner{
+      flex-direction: column;
+    text-align: center;
+    padding: 15px;
+
+    width: 98%;          /* reduce width */
+    margin: 0 auto;      /* 🔥 center from left-right */
+
+    height: 150px;
+    margin-bottom: 5px;
+
+    border: 1px solid red;
+    min-height: auto;
+    margin-bottom: 5px;
+    margin-top: 50px;
+    
+    }
+
+
+    .feature-card,
+    .fx-card{
+        padding:12px;
+    }
+
+    .icon,
+    .fx-icon{
+        width:45px;
+        height:45px;
+        font-size:18px;
+    }
+
+    small,
+    .features{
+        display:none !important;
+    }
+}
+
+/* =========================
+SMALL MOBILE
+========================= */
+@media(max-width:576px){
+    .story-card{
+        height:320px;
+    }
+
+    .compare-wrapper{
+        height:150px;
+    }
+
+    .electronics-card{
+        min-width:240px;
+        min-height:170px;
+    }
+}
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .laptop-section {
+        padding: 0 10px !important; /* Container side padding kam ki */
+    }
+    .laptopSlider {
+        padding-bottom: 20px !important;
+    }
+    /* Card ko thoda chota kiya mobile ke liye */
+    .product-card {
+        border-radius: 15px !important;
+    }
+    .img-area {
+        height: 140px !important; /* Image area chota kiya */
+    }
+    .p-name {
+        font-size: 13px !important;
+        height: 34px !important;
+        margin-bottom: 8px !important;
+    }
+    .price-now {
+        font-size: 16px !important;
+    }
+    .price-old {
+        font-size: 11px !important;
+    }
+    .savings-badge {
+        font-size: 10px !important;
+    }
+}
+/* Mobile specific adjustment for spacing */
+    @media (max-width: 576px) {
+        .mobile-grid-fix {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+        .p-card-custom {
+            border-radius: 12px !important; /* Thoda zyada rounded for premium feel */
+        }
+        .img-container-custom {
+            height: 130px !important; /* Mobile height fix */
+        }
+}
+.bg{
+    background:#F1F5F9;
+    padding:30px;
+    border-radius:16px;
+    overflow:hidden;
+}
+.laptopSlider .swiper-slide{
+    height:auto !important;
+    display:flex;
+}
+
+.laptopSlider .refurbished-card{
+    width:100%;
+}
+
+.product-card-body{
+    padding:15px;
+    flex-grow:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.product-card-footer{
+    background:#fbfbfd;
+    padding:10px 15px;
+    border-top:1px solid #f2f2f7;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.card-img-container{
+    position:relative;
+    height:180px;
+    overflow:hidden;
+}
+
+.card-img-container img{
+    width:100%;
+    height:140%;
+   
+    display:block;
+}
+
+.bg{
+    background:#F1F5F9;
+    padding:30px;
+    border-radius:16px;
+    overflow:hidden;
+}
+@media (max-width: 576px) {
+    .bg {
+        background-color: transparent !important;
+        padding: 0px !important;
+        border-radius: 0px !important;
+        /* Agar koi shadow hai toh use bhi hata sakte hain */
+        box-shadow: none !important;
+    }
+}
+@media (max-width: 576px) {
+        .laptop-section.container {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+        .laptopSlider {
+            padding: 10px 0px !important; /* Side padding khatam */
+        }
+        .product-card {
+            margin: 0 5px; /* Cards ke beech halka gap */
+        }
+        .card-img-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+    }
+/* Container and Title */
+.laptop-section {
+    padding: 20px 10px;
+}
+
+.brand-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #1d1d1f;
+    letter-spacing: -0.5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Main Card Design */
+.refurbished-card {
+    background: #fff;
+    border-radius: 22px;
+    border: 1px solid #f2f2f7;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none !important;
+}
+
+.refurbished-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Image Section */
+.card-img-container {
+    position: relative;
+    height: 180px; /* Base height for mobile */
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Removed padding so image can touch edges */
+    overflow: hidden; /* Ensures image doesn't spill over rounded corners */
+    border-radius: 15px 15px 0 0; /* Rounded top corners only */
+}
+
+.
+.laptopSlider .swiper-slide{
+    height:auto !important;
+    display:flex;
+}
+
+.laptopSlider .refurbished-card{
+    width:100%;
+}
+/* Hover effect to zoom image slightly like premium sites */
+.refurbished-card:hover .card-img-container img {
+    transform: scale(1.08);
+}
+
+/* Desktop Adjustment */
+@media (min-width: 992px) {
+    .card-img-container {
+        height: 220px; /* Taller height for desktop screens */
+    }
+}
+
+/* Badges &amp; Pills */
+
+
+.grade-dot {
+    width: 6px;
+    height: 6px;
+    background: #28a745;
+    border-radius: 50%;
+}
+
+.discount-pill {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #ff3b30;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 4px 9px;
+    border-radius: 50px;
+    z-index: 2;
+}
+
+.stock-pill {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: #ff9500;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 4px 10px rgba(255, 149, 0, 0.2);
+}
+
+/* Content Section */
+/*.card-body {*/
+/*    padding: 15px;*/
+/*    flex-grow: 1;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+.savings-label {
+    color: #1d8045;
+    font-size: 11px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.product-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1d1d1f;
+    line-height: 1.4;
+    height: 40px;
+    overflow: hidden;
+    margin: 0 0 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* Pricing Section */
+.price-wrapper {
+    margin-top: auto;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.current-price {
+    font-size: 20px;
+    font-weight: 800;
+    color: #1d1d1f;
+}
+
+.old-price {
+    font-size: 12px;
+    color: #ff0000;
+    text-decoration: line-through;
+}
+
+.emi-text {
+    font-size: 10px;
+    color: #86868b;
+    margin-top: 4px;
+}
+
+/* Footer Section */
+.product-card-body{
+    padding:15px;
+    flex-grow:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.product-card-footer{
+    background:#fbfbfd;
+    padding:10px 15px;
+    border-top:1px solid #f2f2f7;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:2px;
+}
+
+.warranty-text {
+    font-size: 10px;
+    color: #1d1d1f;
+    font-weight: 600;
+}
+
+.compare-btn {
+    font-size: 10px;
+    color: #0066cc;
+    font-weight: 700;
+    text-decoration: none;
+}
+.left-icon-only {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+}
+
+.left-icon-only img {
+    width: 66px;
+    height: 28px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgb(255, 107, 107));
+
+}
+.out-stock {
+    background: #dc3545;
+    color: #fff;
+    font-weight: 700;
+}
+
+.out-of-stock-card {
+    pointer-events: none;
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+.map-wrapper {
+    border-radius: 15px;
+    overflow: hidden;
+    height: 200px;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.store-address {
+    font-size: 11px;
+    color: #86868b;
+    margin-top: 6px;
+}
+
+/* Coming Soon Card */
+.coming-box {
+    height: 200px;
+    border-radius: 15px;
+    background: #fff;
+    border: 2px dashed #C12328;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #C12328;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}.product-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;   /* 🔥 max 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    line-height: 1.4;
+    height: 40px; /* fix height for 2 lines */
+}
+/* REMOVE WHITE SPACE */
+/* ROW */
+.brand-row-v2 {
+    display: flex;
+    gap: 10px;
+}
+
+/* 3 PER ROW */
+.brand-col-v2 {
+    flex: 0 0 33.33%;
+}
+
+/* CARD (RATIO FIX) */
+.brand-box-v2 {
+    width: 100%;
+    aspect-ratio: 772 / 373;   /* 🔥 IMPORTANT */
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+/* IMAGE PERFECT FIT */
+.brand-box-v2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* full fill without distortion */
+}
+
+/* HOVER */
+.brand-box-v2:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}/* ROW */
+.brand-row-v2 {
+    display: flex;
+    gap: 10px;
+}
+
+/* 3 PER ROW */
+.brand-col-v2 {
+    flex: 0 0 33.33%;
+}
+
+/* CARD (RATIO FIX) */
+.brand-box-v2 {
+    width: 100%;
+    aspect-ratio: 772 / 373;   /* 🔥 IMPORTANT */
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+/* IMAGE PERFECT FIT */
+.brand-box-v2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* full fill without distortion */
+}
+
+/* HOVER */
+.brand-box-v2:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+/* DESKTOP ONLY */
+@media (min-width: 769px){
+    .brand-wrap-v2{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+    .brand-wrap-v2{
+        padding-top: 0;
+        padding-bottom: 6px;
+        padding-right: 20px;
+
+    }
+}
+/* =========================
+BEST DEALS MOBILE PREMIUM FIX
+========================= */
+@media (max-width:768px){
+
+    .brand-wrap-v2{
+        padding: 0 8px 12px !important;
+        overflow: hidden;
+    }
+
+    .brand-wrap-v2 .container{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        max-width: 100% !important;
+    }
+
+    .brand-row-v2{
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .brand-col-v2{
+        flex: 1;
+        padding: 0;
+        min-width: 0;
+    }
+
+    .brand-box-v2{
+        width: 100%;
+        aspect-ratio: 0.95 /0.60 ;
+        border-radius: 14px;
+        overflow: hidden;
+        background: #fff;
+        border: 1px solid #ececec;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    .brand-box-v2 a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .brand-box-v2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .brand-title{
+        font-size: 18px;
+        margin-bottom: 14px;
+        padding-left: 2px;
+    }
+}
+</style>
+
+
+
+
+
+<h1 style="position:absolute; left:-9999px;">
+    Best Refurbished Laptops in India | Second hand laptops in India | Laptopwale
+</h1>
+
+<!-- Features -->
+<div class="hero-wrapper">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+        
+        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="" fdprocessedid="7m66zn"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" class="" fdprocessedid="sv09a"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" class="active" fdprocessedid="hpxgyf" aria-current="true"></button>
+                    </div>
+
+        <div class="carousel-inner">
+                        <div class="carousel-item">
+                <div class="hero-box" style="background-image: url('dynamic/uploads/images/1778313904_Artboard_1_(1).png');">
+                    <div class="hero-content">
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+                        <div class="carousel-item active carousel-item-start">
+                <div class="hero-box" style="background-image: url('dynamic/uploads/images/1778313923_Artboard_2_(3).png');">
+                    <div class="hero-content">
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+                        <div class="carousel-item carousel-item-next carousel-item-start">
+                <div class="hero-box" style="background-image: url('dynamic/uploads/images/1778313930_Artboard_3.png');">
+                    <div class="hero-content">
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+                    </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" fdprocessedid="zf14so">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" fdprocessedid="si7wk">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+<section class="fx-stats py-5">
+  <div class="container">
+    <div class="row text-center g-4">
+
+      <div class="col-lg-3 col-md-6 col-6">
+        <div class="fx-card">
+          <div class="fx-icon fx-yellow"><i class="bi bi-emoji-smile"></i></div>
+          <h3><span class="fx-counter" data-target="217634">217,634</span>+</h3>
+          <p>PRODUCTS SOLD</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-6">
+        <div class="fx-card">
+          <div class="fx-icon fx-blue"><i class="bi bi-people-fill"></i></div>
+          <h3><span class="fx-counter" data-target="20000">20,000</span>+</h3>
+          <p>ACTIVE USERS </p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-6">
+        <div class="fx-card">
+          <div class="fx-icon fx-green"><i class="bi bi-globe"></i></div>
+          <h3><span class="fx-counter" data-target="136">136</span>+</h3>
+          <p>PRODUCTS</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-6">
+        <div class="fx-card">
+          <div class="fx-icon fx-orange"><i class="bi bi-star-fill"></i></div>
+          <h3>4.8 </h3>
+          <p>GOOGLE RATING</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="why-choose py-5">
+  <div class="container text-center">
+
+    <h2 class="fw-bold mb-2">Why Choose Laptop Wale?</h2>
+    <p class="text-muted mb-5">India's most trusted destination for certified refurbished tech</p>
+
+    <div class="row g-4">
+
+      <div class="col-lg-2 col-md-4 col-4">
+        <div class="feature-card">
+          <div class="icon green"><i class="bi bi-shield-check"></i></div>
+          <h6><span>6 Months</span><br />Warranty </h6>
+           
+          <small class="d-none d-sm-block">All devices covered</small>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-4">
+        <div class="feature-card">
+          <div class="icon blue"><i class="bi bi-check2"></i></div>
+          <h6><span>32-Point</span><br />Quality Check</h6>
+          <small class="d-none d-sm-block">Rigorous testing</small>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-4">
+        <div class="feature-card">
+          <div class="icon orange"><i class="bi bi-patch-check-fill"></i></div>
+          <h6><span>Certified</span><br />Refurbished</h6>
+          <small class="d-none d-sm-block">Laptop </small>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-4">
+        <div class="feature-card">
+          <div class="icon purple"><i class="bi bi-lightning-charge"></i></div>
+          <h6><span>Easy</span><br />EMI</h6>
+          <small class="d-none d-sm-block">Flexible payments</small>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-4">
+        <div class="feature-card">
+          <div class="icon yellow"><i class="bi bi-award"></i></div>
+          <h6><span>Best</span><br />Price</h6>
+          <small class="d-none d-sm-block">Save up to 60%</small>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-4">
+        <div class="feature-card">
+          <div class="icon red"><i class="bi bi-arrow-repeat"></i></div>
+          <h6><span>7-Day</span><br />Returns</h6>
+          <small class="d-none d-sm-block">No questions asked</small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<div class="container brand-section">
+
+<h2 class="brand-title">SHOP BY BRANDS</h2>
+
+<div class="brand-grid">
+<a href="products.php?sort=&amp;brand%5B%5D=Apple">
+<div class="brand-card">
+<img src="new%20images/6.png" />
+</div>
+</a>
+
+ <a href="products.php?sort=&amp;brand%5B%5D=Lenovo">
+<div class="brand-card">
+<img src="new%20images/2.png" />
+</div>
+</a>
+
+ <a href="products.php?sort=&amp;brand%5B%5D=Dell">
+<div class="brand-card">
+<img src="new%20images/3.png" />
+</div>
+</a>
+
+ <a href="products.php?sort=&amp;brand%5B%5D=HP">
+<div class="brand-card">
+<img src="new%20images/44.png" />
+</div>
+</a>
+ <a href="products.php?sort=&amp;brand%5B%5D=Acer">
+<div class="brand-card">
+<img src="new%20images/55.png" />
+</div>
+</a>
+ <a href="products.php?sort=&amp;brand%5B%5D=Asus">
+<div class="brand-card">
+<img src="new%20images/1.png" />
+</div>
+</a>
+
+</div>
+</div>
+
+<section class="brand-wrap-v2">
+    <div class="container">
+
+        <!-- Header -->
+<h2 class="brand-title">BEST DEALS ON A BUDGET</h2>
+
+      <div class="brand-row-v2">
+
+    <div class="brand-col-v2">
+        <div class="brand-box-v2">
+            <a href="products?max_price=15000">
+            <img src="laptopwale.in/images/15.png" /></a>
+        </div>
+    </div>
+
+    <div class="brand-col-v2">
+        <div class="brand-box-v2">
+            <a href="products?max_price=30000">
+            <img src="laptopwale.in/images/30.png" /></a>
+        </div>
+    </div>
+
+    <div class="brand-col-v2">
+        <div class="brand-box-v2">
+            <a href="products?max_price=40000">
+            <img src="laptopwale.in/images/40.png" />
+            </a>
+        </div>
+    </div>
+
+</div>
+    </div>
+</section>
+
+<div class="bg">
+<div class="container laptop-section">
+    <h2 class="brand-title">LATEST REFURBISHED LAPTOPS</h2>
+
+    <div class="swiper laptopSlider swiper-initialized swiper-horizontal">
+        <div class="swiper-wrapper" id="swiper-wrapper-de8223e3ee5c4589" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-983.25px, 0px, 0px); transition-delay: 0ms;">
+                        
+            <div class="swiper-slide" role="group" aria-label="1 / 12" data-swiper-slide-index="0" style="width: 312.75px; margin-right: 15px;">
+<a href="product-details.php?id=94" class="refurbished-card ">                    
+                    <div class="card-img-container">
+                        
+                        <div class="left-icon-only">
+                     <img src="new%20images/tag.png" alt="Refurbished laptops in India at LaptopWale with best prices and warranty" />
+                      </div>
+                                                    <span class="discount-pill">-73%</span>
+                        
+                        <img src="laptopwale.in/dynamic/uploads/images/1782305387_1.jpg" alt="Image form - Second hand laptops in India available online at LaptopWale store" />
+
+                                            </div>
+
+                    <div class="product-card-body">
+                        <span class="savings-label">₹130,500 OFF</span>
+                        <h3 class="product-title">Refurbished MacBook Pro A2141 2019 | Touchbar, Four Thunderbolt 3 Ports | 16 | Intel core i7</h3>
+                        
+                        <div class="price-wrapper">
+                            <span class="current-price">₹49,500</span>
+                            <span class="old-price">₹180,000</span>
+                        </div>
+                        <div class="emi-text">EMI from ₹4,125/mo</div>
+                    </div>
+
+                   <div class="product-card-footer">
+                        <span class="warranty-text">🛡️ 6M Warranty</span>
+                        <span class="compare-btn">Compare</span>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide" role="group" aria-label="2 / 12" data-swiper-slide-index="1" style="width: 312.75px; margin-right: 15px;">
+<a href="product-details.php?id=96" class="refurbished-card ">                    
+                    <div class="card-img-container">
+                        
+                        <div class="left-icon-only">
+                     <img src="new%20images/tag.png" alt="Refurbished laptops in India at LaptopWale with best prices and warranty" />
+                      </div>
+                                                    <span class="discount-pill">-66%</span>
+                        
+                        <img src="laptopwale.in/dynamic/uploads/images/1782305342_1.jpg" alt="Image form - Second hand laptops in India available online at LaptopWale store" />
+
+                            <div class="stock-pill">🔥 5 left</div>
+                    </div>
+
+                    <div class="product-card-body">
+                        <span class="savings-label">₹52,699 OFF</span>
+                        <h3 class="product-title">Refurbished MacBook Air  A1466 2017 | 13 | Intel core i5</h3>
+                        
+                        <div class="price-wrapper">
+                            <span class="current-price">₹27,300</span>
+                            <span class="old-price">₹79,999</span>
+                        </div>
+                        <div class="emi-text">EMI from ₹2,275/mo</div>
+                    </div>
+
+                   <div class="product-card-footer">
+                        <span class="warranty-text">🛡️ 6M Warranty</span>
+                        <span class="compare-btn">Compare</span>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide swiper-slide-prev" role="group" aria-label="3 / 12" data-swiper-slide-index="2" style="width: 312.75px; margin-right: 15px;">
+<a href="javascript:void(0);" class="refurbished-card out-of-stock-card">                    
+                    <div class="card-img-container">
+                        
+                        <div class="left-icon-only">
+                     <img src="new%20images/tag.png" alt="Refurbished laptops in India at LaptopWale with best prices and warranty" />
+                      </div>
+                                                    <span class="discount-pill">-78%</span>
+                        
+                        <img src="laptopwale.in/dynamic/uploads/images/1775733381_1.jpg" alt="Image form - Second hand laptops in India available online at LaptopWale store" />
+
+                            <div class="stock-pill out-stock">Out of Stock</div>
+                    </div>
+
+                    <div class="product-card-body">
+                        <span class="savings-label">₹194,500 OFF</span>
+                        <h3 class="product-title">Refurbished MacBook Pro A2141 2019 | Touchbar, Four Thunderbolt 3 Ports | 16 i9 | Intel core i9</h3>
+                        
+                        <div class="price-wrapper">
+                            <span class="current-price">₹55,500</span>
+                            <span class="old-price">₹250,000</span>
+                        </div>
+                        <div class="emi-text">EMI from ₹4,625/mo</div>
+                    </div>
+
+                   <div class="product-card-footer">
+                        <span class="warranty-text">🛡️ 6M Warranty</span>
+                        <span class="compare-btn">Compare</span>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide swiper-slide-active" role="group" aria-label="4 / 12" data-swiper-slide-index="3" style="width: 312.75px; margin-right: 15px;">
+<a href="javascript:void(0);" class="refurbished-card out-of-stock-card">                    
+                    <div class="card-img-container">
+                        
+                        <div class="left-icon-only">
+                     <img src="new%20images/tag.png" alt="Refurbished laptops in India at LaptopWale with best prices and warranty" />
+                      </div>
+                                                    <span class="discount-pill">-69%</span>
+                        
+                        <img src="laptopwale.in/dynamic/uploads/images/1782545990_2.png" alt="Image form - Second hand laptops in India available online at LaptopWale store" />
+
+                            <div class="stock-pill out-stock">Out of Stock</div>
+                    </div>
+
+                    <div class="product-card-body">
+                        <span class="savings-label">₹38,499 OFF</span>
+                        <h3 class="product-title">Refurbished HP EliteBook 820 G4, Smartchoice, Intel Core i5 (7th Gen), 8GB RAM, 256GB SSD, 12.5 | Core i5 - 7 th</h3>
+                        
+                        <div class="price-wrapper">
+                            <span class="current-price">₹17,500</span>
+                            <span class="old-price">₹55,999</span>
+                        </div>
+                        <div class="emi-text">EMI from ₹1,458/mo</div>
+                    </div>
+
+                   <div class="product-card-footer">
+                        <span class="warranty-text">🛡️ 6M Warranty</span>
+                        <span class="compare-btn">Compare</span>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide swiper-slide-next" role="group" aria-label="5 / 12" data-swiper-slide-index="4" style="width: 312.75px; margin-right: 15px;">
+<a href="product-details.php?id=100" class="refurbished-card ">                    
+                    <div class="card-img-container">
+                        
+                        <div class="left-icon-only">
+                     <img src="new%20images/tag.png" alt="Refurbished laptops in India at LaptopWale with best prices and warranty" />
+                      </div>
+                                                    <span class="discount-pill">-63%</span>
+                        
+                        <img src="laptopwale.in/dynamic/uploads/images/1782304434_2.jpg" alt="Image form - Second hand laptops in India available online at LaptopWale store" />
+
+                            <div class="stock-pill">🔥 4 left</div>
+                    </div>
+
+                    <div class="product-card-body">
+                        <span class="savings-label">₹48,399 OFF</span>
+                        <h3 class="product-title">Refurbished HP ProBook 440 G8, Smartchoice, Intel Core i5 (11th Gen), 8GB RAM, 256GB SSD, 14 | CORE i5 - 11 th</h3>
+                        
+                        <div class="price-wrapper">
+                            <span class="current-price">₹28,500</span>
+                            <span class="old-price">₹76,899</span>
+                        </div>
+                        <div class="emi-text">EMI from ₹2,375/mo</div>
+                    </div>
+
+                   <div class="product-card-footer">
+                        <span class="warranty-text">🛡️ 6M Warranty</span>
+                        <span class="compare-btn">Compare</span>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide" role="group" aria-label="6 / 12" data-swiper-slide-index="5" style="width: 312.75px; margin-right: 15px;">
+<a href="product-details.php?id=101" class="refurbished-card ">                    
+                    <div class="card-img-container">
+                        
+                        <div class="left-icon-only">
+                     <img src="new%20images/tag.png" alt="Refurbished laptops in India at LaptopWale with best prices and warranty" />
+                      </div>
+                                                    <span class="discount-pill">-65%</span>
+                        
+                        <img src="laptopwale.in/dynamic/uploads/images/1782304333_dell%20latitute%203400.png" alt="Image form - Second hand laptops in India available online at LaptopWale store" />
+
+                                            </div>
+
+                    <div class="product-card-body">
+                        <span class="savings-label">₹42,499 OFF</span>
+                        <h3 class="product-title">Refurbished Dell Latitude 3400, Smartchoice, Intel Core i5 (8th Gen), 8GB RAM, 256GB SSD, 14 | CORE i5 - 8 th</h3>
+                        
+                        <div class="price-wrapper">
+                            <span class="current-price">₹22,500</span>
+                            <span class="old-price">₹64,999</span>
+                        </div>
+                        <div class="emi-text">EMI from ₹1,875/mo</div>
+                    </div>
+
+                   <div class="product-card-footer">
+                        <span class="warranty-text">🛡️ 6M Warranty</span>
+                        <span class="compare-btn">Compare</span>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide" role="group" aria-label="7 / 12" data-swiper-slide-index="6" style="width: 312.75px; margin-right: 15px;">
+<a href="javascript:void(0);" class="refurbished-card out-of-stock-card">                    
+                    <div class="card-img-container">
+                        
+                        <div class="left-icon-only">
+                     <img src="new%20images/tag.png" alt="Refurbished laptops in India at LaptopWale with best prices and warranty" />
+                      </div>
+                                                    <span class="discount-pill">-61%</span>
+                        
+                        <img src="laptopwale.in/dynamic/uploads/images/1775654566_1.jpg" alt="Image form - Second hand laptops in India available online at LaptopWale store" />
+
+                            <div class="stock-pill out-stock">Out of Stock</div>
+                    </div>
+
+                    <div class="product-card-body">
+                        <span class="savings-label">₹57,500 OFF</span>
+                        <h3 class="product-title">Refurbished Dell Latitude 5430, Smartchoice, Intel Core i5 (12th Gen), 8GB RAM, 256GB SSD, 14 | CORE i5 - 12 th</h3>
+                        
+                        <div class="price-wrapper">
+                            <span class="current-price">₹36,500</span>
+                            <span class="old-price">₹94,000</span>
+                        </div>
+                        <div class="emi-text">EMI from ₹3,042/mo</div>
+                    </div>
+
+                   <div class="product-card-footer">
+                        <span class="warranty-text">🛡️ 6M Warranty</span>
+                        <span class="compare-btn">Compare</span>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide" role="group" aria-label="8 / 12" data-swiper-slide-index="7" style="width: 312.75px; margin-right: 15px;">
+<a href="product-details.php?id=103" class="refurbished-card ">                    
+                    <div class="card-img-container">
+                        
+                        <div class="left-icon-only">
+                     <img src="new%20images/tag.png" alt="Refurbished laptops in India at LaptopWale with best prices and warranty" />
+                      </div>
+                                                    <span class="discount-pill">-65%</span>
+                        
+                        <img src="laptopwale.in/dynamic/uploads/images/1775828709_buy-dell-latitude-3420-i5-11th-gen-refurbished-laptop-india.jpg" alt="Image form - Second hand laptops in India available online at LaptopWale store" />
+
+                                            </div>
+
+                    <div class="product-card-body">
+                        <span class="savings-label">₹47,499 OFF</span>
+                        <h3 class="product-title">Refurbished Dell Latitude 3420, Smartchoice, Intel Core i5 (11th Gen), 8GB RAM, 256GB SSD, 14 | CORE i5 - 11 th</h3>
+                        
+                        <div class="price-wrapper">
+                            <span class="current-price">₹25,500</span>
+                            <span class="old-price">₹72,999</span>
+                        </div>
+                        <div class="emi-text">EMI from ₹2,125/mo</div>
+                    </div>
+
+                   <div class="product-card-footer">
+                        <span class="warranty-text">🛡️ 6M Warranty</span>
+                        <span class="compare-btn">Compare</span>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide" role="group" aria-label="9 / 12" data-swiper-slide-index="8" style="width: 312.75px; margin-right: 15px;">
+<a href="product-details.php?id=104" class="refurbished-card ">                    
+                    <div class="card-img-container">
+                        
+                        <div class="left-icon-only">
+                     <img src="new%20images/tag.png" alt="Refurbished laptops in India at LaptopWale with best prices and warranty" />
+                      </div>
+                                                    <span class="discount-pill">-60%</span>
+                        
+                        <img src="laptopwale.in/dynamic/uploads/images/1776147225_4.png" alt="Image form - Second hand laptops in India available online at LaptopWale store" />
+
+                                            </div>
+
+                    <div class="product-card-body">
+                        <span class="savings-label">₹52,499 OFF</span>
+                        <h3 class="product-title">Refurbished Dell Latitude 5420 Intel Core i5 11th Gen, 16GB RAM, 512GB SSD, 14 | CORE i5 - 11 th</h3>
+                        
+                        <div class="price-wrapper">
+                            <span class="current-price">₹35,500</span>
+                            <span class="old-price">₹87,999</span>
+                        </div>
+                        <div class="emi-text">EMI from ₹2,958/mo</div>
+                    </div>
+
+                   <div class="product-card-footer">
+                        <span class="warranty-text">🛡️ 6M Warranty</span>
+                        <span class="compare-btn">Compare</span>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide" role="group" aria-label="10 / 12" data-swiper-slide-index="9" style="width: 312.75px; margin-right: 15px;">
+<a href="product-details.php?id=105" class="refurbished-card ">                    
+                    <div class="card-img-container">
+                        
+                        <div class="left-icon-only">
+                     <img src="new%20images/tag.png" alt="Refurbished laptops in India at LaptopWale with best prices and warranty" />
+                      </div>
+                                                    <span class="discount-pill">-68%</span>
+                        
+                        <img src="laptopwale.in/dynamic/uploads/images/1775736779_1.png" alt="Image form - Second hand laptops in India available online at LaptopWale store" />
+
+                                            </div>
+
+                    <div class="product-card-body">
+                        <span class="savings-label">₹56,490 OFF</span>
+                        <h3 class="product-title">Refurbished Lenovo ThinkPad L13, Smartchoice, Intel Core i5 (11th Gen), 8GB RAM, 256GB SSD, 13.3 | CORE i5 - 11 th</h3>
+                        
+                        <div class="price-wrapper">
+                            <span class="current-price">₹26,500</span>
+                            <span class="old-price">₹82,990</span>
+                        </div>
+                        <div class="emi-text">EMI from ₹2,208/mo</div>
+                    </div>
+
+                   <div class="product-card-footer">
+                        <span class="warranty-text">🛡️ 6M Warranty</span>
+                        <span class="compare-btn">Compare</span>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide" role="group" aria-label="11 / 12" data-swiper-slide-index="10" style="width: 312.75px; margin-right: 15px;">
+<a href="javascript:void(0);" class="refurbished-card out-of-stock-card">                    
+                    <div class="card-img-container">
+                        
+                        <div class="left-icon-only">
+                     <img src="new%20images/tag.png" alt="Refurbished laptops in India at LaptopWale with best prices and warranty" />
+                      </div>
+                                                    <span class="discount-pill">-74%</span>
+                        
+                        <img src="laptopwale.in/dynamic/uploads/images/1775737959_1.png" alt="Image form - Second hand laptops in India available online at LaptopWale store" />
+
+                            <div class="stock-pill">🔥 -2 left</div>
+                    </div>
+
+                    <div class="product-card-body">
+                        <span class="savings-label">₹41,000 OFF</span>
+                        <h3 class="product-title">Refurbished Lenovo ThinkPad T450, Smartchoice, Intel Core i5 (5th Gen), 8GB RAM, 256GB SSD, 14 | CORE i5 - 5 th</h3>
+                        
+                        <div class="price-wrapper">
+                            <span class="current-price">₹14,500</span>
+                            <span class="old-price">₹55,500</span>
+                        </div>
+                        <div class="emi-text">EMI from ₹1,208/mo</div>
+                    </div>
+
+                   <div class="product-card-footer">
+                        <span class="warranty-text">🛡️ 6M Warranty</span>
+                        <span class="compare-btn">Compare</span>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide" role="group" aria-label="12 / 12" data-swiper-slide-index="11" style="width: 312.75px; margin-right: 15px;">
+<a href="javascript:void(0);" class="refurbished-card out-of-stock-card">                    
+                    <div class="card-img-container">
+                        
+                        <div class="left-icon-only">
+                     <img src="new%20images/tag.png" alt="Refurbished laptops in India at LaptopWale with best prices and warranty" />
+                      </div>
+                                                    <span class="discount-pill">-97%</span>
+                        
+                        <img src="laptopwale.in/dynamic/uploads/images/1775824159_3.png" alt="Image form - Second hand laptops in India available online at LaptopWale store" />
+
+                            <div class="stock-pill out-stock">Out of Stock</div>
+                    </div>
+
+                    <div class="product-card-body">
+                        <span class="savings-label">₹726,500 OFF</span>
+                        <h3 class="product-title">Refurbished Dell Latitude 5400, Smartchoice, Intel Core i7 (8th Gen), 8GB RAM, 256GB SSD, 14 | CORE I5 - 8 TH </h3>
+                        
+                        <div class="price-wrapper">
+                            <span class="current-price">₹23,500</span>
+                            <span class="old-price">₹750,000</span>
+                        </div>
+                        <div class="emi-text">EMI from ₹1,958/mo</div>
+                    </div>
+
+                   <div class="product-card-footer">
+                        <span class="warranty-text">🛡️ 6M Warranty</span>
+                        <span class="compare-btn">Compare</span>
+                    </div>
+                </a>
+            </div>
+
+                    </div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+</div>
+</div>
+
+
+
+<div class="live-banner">
+
+    <div class="banner-left">
+        <div class="rec"></div>
+        <h2>
+            <!--Explore Refurbished Laptops with Real-Time Support<br>-->
+            <!--Smart Shopping Starts Here-->
+        </h2>
+    </div>
+
+    <div class="banner-right">
+        <!--<h3>Shop LIVE on a video call through</h3>-->
+        <!--<div class="live-btn">LIVE Store</div>-->
+    </div>
+
+</div>
+
+
+ 
+
+<div class="bg">
+    <div class="container laptop-section">
+        <h2 class="brand-title">LATEST LAPTOPS</h2>
+
+        <div class="row row-cols-2 row-cols-md-4 g-3">
+            
+            <div class="col">
+                <a href="product-details.php?id=94" class="refurbished-card ">
+
+                    <div class="card-img-container">
+                        
+                         <div class="left-icon-only">
+                     <img src="new%20images/tag.png" alt="Refurbished laptops in India at LaptopWale with best prices and warranty" />
+                      </div>
+                                                    <span class="discount-pill">-73%</span>
+                        
+                        <img src="laptopwale.in/dynamic/uploads/images/1782305387_1.jpg" alt="Image form - Second hand laptops in India available online at LaptopWale store" />
+
+                                            </div>
+
+                    <div class="product-card-body">
+                        <span class="savings-label">₹130,500 OFF</span>
+                        <h3 class="product-title">
+                            Refurbished MacBook Pro A2141 2019 | Touchbar, Four Thunderbolt 3 Ports | 16 | Intel core i7                        </h3>
+
+                        <div class="price-wrapper">
+                            <span class="current-price">₹49,500</span>
+                            <span class="old-price">₹180,000</span>
+                        </div>
+
+                        <div class="emi-text">
+                            EMI from ₹4,125/mo
+                        </div>
+                    </div>
+
+                    <div class="product-card-footer">
+                        <span class="warranty-text">🛡️ 6M Warranty</span>
+                        <span class="compare-btn">Compare</span>
+                    </div>
+                </a>
+            </div>
+
+            
+            <div class="col">
+                <a href="product-details.php?id=96" class="refurbished-card ">
+
+                    <div class="card-img-container">
+                        
+                         <div class="left-icon-only">
+                     <img src="new%20images/tag.png" alt="Refurbished laptops in India at LaptopWale with best prices and warranty" />
+                      </div>
+                                                    <span class="discount-pill">-66%</span>
+                        
+                        <img src="laptopwale.in/dynamic/uploads/images/1782305342_1.jpg" alt="Image form - Second hand laptops in India available online at LaptopWale store" />
+
+                            <div class="stock-pill">🔥 5 left</div>
+                    </div>
+
+                    <div class="product-card-body">
+                        <span class="savings-label">₹52,699 OFF</span>
+                        <h3 class="product-title">
+                            Refurbished MacBook Air  A1466 2017 | 13 | Intel core i5                        </h3>
+
+                        <div class="price-wrapper">
+                            <span class="current-price">₹27,300</span>
+                            <span class="old-price">₹79,999</span>
+                        </div>
+
+                        <div class="emi-text">
+                            EMI from ₹2,275/mo
+                        </div>
+                    </div>
+
+                    <div class="product-card-footer">
+                        <span class="warranty-text">🛡️ 6M Warranty</span>
+                        <span class="compare-btn">Compare</span>
+                    </div>
+                </a>
+            </div>
+
+            
+            <div class="col">
+                <a href="javascript:void(0);" class="refurbished-card out-of-stock-card">
+
+                    <div class="card-img-container">
+                        
+                         <div class="left-icon-only">
+                     <img src="new%20images/tag.png" alt="Refurbished laptops in India at LaptopWale with best prices and warranty" />
+                      </div>
+                                                    <span class="discount-pill">-78%</span>
+                        
+                        <img src="laptopwale.in/dynamic/uploads/images/1775733381_1.jpg" alt="Image form - Second hand laptops in India available online at LaptopWale store" />
+
+                            <div class="stock-pill out-stock">Out of Stock</div>
+                    </div>
+
+                    <div class="product-card-body">
+                        <span class="savings-label">₹194,500 OFF</span>
+                        <h3 class="product-title">
+                            Refurbished MacBook Pro A2141 2019 | Touchbar, Four Thunderbolt 3 Ports | 16 i9 | Intel core i9                        </h3>
+
+                        <div class="price-wrapper">
+                            <span class="current-price">₹55,500</span>
+                            <span class="old-price">₹250,000</span>
+                        </div>
+
+                        <div class="emi-text">
+                            EMI from ₹4,625/mo
+                        </div>
+                    </div>
+
+                    <div class="product-card-footer">
+                        <span class="warranty-text">🛡️ 6M Warranty</span>
+                        <span class="compare-btn">Compare</span>
+                    </div>
+                </a>
+            </div>
+
+            
+            <div class="col">
+                <a href="javascript:void(0);" class="refurbished-card out-of-stock-card">
+
+                    <div class="card-img-container">
+                        
+                         <div class="left-icon-only">
+                     <img src="new%20images/tag.png" alt="Refurbished laptops in India at LaptopWale with best prices and warranty" />
+                      </div>
+                                                    <span class="discount-pill">-69%</span>
+                        
+                        <img src="laptopwale.in/dynamic/uploads/images/1782545990_2.png" alt="Image form - Second hand laptops in India available online at LaptopWale store" />
+
+                            <div class="stock-pill out-stock">Out of Stock</div>
+                    </div>
+
+                    <div class="product-card-body">
+                        <span class="savings-label">₹38,499 OFF</span>
+                        <h3 class="product-title">
+                            Refurbished HP EliteBook 820 G4, Smartchoice, Intel Core i5 (7th Gen), 8GB RAM, 256GB SSD, 12.5 | Core i5 - 7 th                        </h3>
+
+                        <div class="price-wrapper">
+                            <span class="current-price">₹17,500</span>
+                            <span class="old-price">₹55,999</span>
+                        </div>
+
+                        <div class="emi-text">
+                            EMI from ₹1,458/mo
+                        </div>
+                    </div>
+
+                    <div class="product-card-footer">
+                        <span class="warranty-text">🛡️ 6M Warranty</span>
+                        <span class="compare-btn">Compare</span>
+                    </div>
+                </a>
+            </div>
+
+                    </div>
+    </div>
+</div>
+  
+<div class="container laptop-section">
+    <h2 class="brand-title">PREMIUM ACCESSORIES</h2>
+
+    <div class="swiper laptopSlider swiper-initialized swiper-horizontal swiper-backface-hidden">
+        <div class="swiper-wrapper" id="swiper-wrapper-f9eb6b3eea27a8ac" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-983.25px, 0px, 0px); transition-delay: 0ms;">
+                        
+            <div class="swiper-slide" role="group" aria-label="1 / 10" data-swiper-slide-index="0" style="width: 312.75px; margin-right: 15px;">
+                <a href="product-details.php?id=153" class="refurbished-card " style="text-decoration: none; display: block; height: 100%;">
+                    
+                    <div class="laptop-card" style="margin-bottom: 0; height: 100%; position: relative;">
+                        
+                        <!-- Discount Badge -->
+                        
+                        <!-- Image Section -->
+                        <div style="height: 140px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="laptopwale.in/dynamic/uploads/images/1778495435_second%20HDD%20caddy.jpg" alt="HDD 9.5 Caddy" style="max-height: 100%; width: auto; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
+                        </div>
+                        
+                        <div style="padding: 10px;">
+                            <!--<h4 style="font-size: 14px; font-weight: 600; color: #333; height: 38px; overflow: hidden; ">-->
+                                <h4 class="product-name">
+    HDD 9.5 Caddy</h4>
+                            
+                            
+                            <div class="laptop-price" style="color: #1d1d1f; font-weight: 700; font-size: 16px;">
+                                ₹300                                                                    <span style="font-size: 12px; color: #ff0000; text-decoration: line-through; margin-left: 5px;font-weight: 100; ">
+                                        
+    
+                                        ₹249                                    </span>
+                                                            </div>
+
+                            <!-- Stock Status -->
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide" role="group" aria-label="2 / 10" data-swiper-slide-index="1" style="width: 312.75px; margin-right: 15px;">
+                <a href="product-details.php?id=152" class="refurbished-card " style="text-decoration: none; display: block; height: 100%;">
+                    
+                    <div class="laptop-card" style="margin-bottom: 0; height: 100%; position: relative;">
+                        
+                        <!-- Discount Badge -->
+                                                    <span class="discount-pill" style="position: absolute; top: 10px; right: 10px; background: #ff3b30; color: #fff; font-size: 10px; padding: 2px 8px; border-radius: 20px; z-index: 5;">
+                                -56%
+                            </span>
+                        
+                        <!-- Image Section -->
+                        <div style="height: 140px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="laptopwale.in/dynamic/uploads/images/1778491197_Techie%20USB%203.0%20Transparent%20External%20Enclosure%20for%202.5%E2%80%9D%20SATA%20SSD_HDD.png" alt="Techie USB 3.0 Transparent External Enclosure for 2.5â€ SATA SSD/HDD" style="max-height: 100%; width: auto; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
+                        </div>
+                        
+                        <div style="padding: 10px;">
+                            <!--<h4 style="font-size: 14px; font-weight: 600; color: #333; height: 38px; overflow: hidden; ">-->
+                                <h4 class="product-name">
+    Techie USB 3.0 Transparent External Enclosure for 2.5â€ SATA SSD/HDD</h4>
+                            
+                            
+                            <div class="laptop-price" style="color: #1d1d1f; font-weight: 700; font-size: 16px;">
+                                ₹349                                                                    <span style="font-size: 12px; color: #ff0000; text-decoration: line-through; margin-left: 5px;font-weight: 100; ">
+                                        
+    
+                                        ₹799                                    </span>
+                                                            </div>
+
+                            <!-- Stock Status -->
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide swiper-slide-prev" role="group" aria-label="3 / 10" data-swiper-slide-index="2" style="width: 312.75px; margin-right: 15px;">
+                <a href="product-details.php?id=151" class="refurbished-card " style="text-decoration: none; display: block; height: 100%;">
+                    
+                    <div class="laptop-card" style="margin-bottom: 0; height: 100%; position: relative;">
+                        
+                        <!-- Discount Badge -->
+                                                    <span class="discount-pill" style="position: absolute; top: 10px; right: 10px; background: #ff3b30; color: #fff; font-size: 10px; padding: 2px 8px; border-radius: 20px; z-index: 5;">
+                                -50%
+                            </span>
+                        
+                        <!-- Image Section -->
+                        <div style="height: 140px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="laptopwale.in/dynamic/uploads/images/1778490748_techic%20wireless%20150.png" alt="Techie Wireless 150 Mbps USB Wifi Adapter Rated 4.80 out of 5 based on 5customer ratings" style="max-height: 100%; width: auto; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
+                        </div>
+                        
+                        <div style="padding: 10px;">
+                            <!--<h4 style="font-size: 14px; font-weight: 600; color: #333; height: 38px; overflow: hidden; ">-->
+                                <h4 class="product-name">
+    Techie Wireless 150 Mbps USB Wifi Adapter Rated 4.80 out of 5 based on 5customer ratings</h4>
+                            
+                            
+                            <div class="laptop-price" style="color: #1d1d1f; font-weight: 700; font-size: 16px;">
+                                ₹299                                                                    <span style="font-size: 12px; color: #ff0000; text-decoration: line-through; margin-left: 5px;font-weight: 100; ">
+                                        
+    
+                                        ₹599                                    </span>
+                                                            </div>
+
+                            <!-- Stock Status -->
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide swiper-slide-active" role="group" aria-label="4 / 10" data-swiper-slide-index="3" style="width: 312.75px; margin-right: 15px;">
+                <a href="javascript:void(0);" class="refurbished-card out-of-stock-card" style="text-decoration: none; display: block; height: 100%;">
+                    
+                    <div class="laptop-card" style="margin-bottom: 0; height: 100%; position: relative;">
+                        
+                        <!-- Discount Badge -->
+                                                    <span class="discount-pill" style="position: absolute; top: 10px; right: 10px; background: #ff3b30; color: #fff; font-size: 10px; padding: 2px 8px; border-radius: 20px; z-index: 5;">
+                                -69%
+                            </span>
+                        
+                        <!-- Image Section -->
+                        <div style="height: 140px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="laptopwale.in/dynamic/uploads/images/1778488242_Techie%20Breeze%20Wireless%20Mouse%20.jpg" alt="Techie Breeze Wireless Mouse | 2.4GHz | 4D Ergonomic | DPI 800â€“1600 | 10m Range" style="max-height: 100%; width: auto; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
+                        </div>
+                        
+                        <div style="padding: 10px;">
+                            <!--<h4 style="font-size: 14px; font-weight: 600; color: #333; height: 38px; overflow: hidden; ">-->
+                                <h4 class="product-name">
+    Techie Breeze Wireless Mouse | 2.4GHz | 4D Ergonomic | DPI 800â€“1600 | 10m Range</h4>
+                            
+                            
+                            <div class="laptop-price" style="color: #1d1d1f; font-weight: 700; font-size: 16px;">
+                                ₹399                                                                    <span style="font-size: 12px; color: #ff0000; text-decoration: line-through; margin-left: 5px;font-weight: 100; ">
+                                        
+    
+                                        ₹1,299                                    </span>
+                                                            </div>
+
+                            <!-- Stock Status -->
+                                                            <small style="color: #dc3545; font-weight: 700;">Out of Stock</small>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide swiper-slide-next" role="group" aria-label="5 / 10" data-swiper-slide-index="4" style="width: 312.75px; margin-right: 15px;">
+                <a href="product-details.php?id=149" class="refurbished-card " style="text-decoration: none; display: block; height: 100%;">
+                    
+                    <div class="laptop-card" style="margin-bottom: 0; height: 100%; position: relative;">
+                        
+                        <!-- Discount Badge -->
+                                                    <span class="discount-pill" style="position: absolute; top: 10px; right: 10px; background: #ff3b30; color: #fff; font-size: 10px; padding: 2px 8px; border-radius: 20px; z-index: 5;">
+                                -50%
+                            </span>
+                        
+                        <!-- Image Section -->
+                        <div style="height: 140px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="laptopwale.in/dynamic/uploads/images/1778487964_Techie%20HDMI%20to%20VGA%20Converter%20%E2%80%93%201080P%20Full%20HD.jpg" alt="Techie HDMI to VGA Converter â€“ 1080P Full HD" style="max-height: 100%; width: auto; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
+                        </div>
+                        
+                        <div style="padding: 10px;">
+                            <!--<h4 style="font-size: 14px; font-weight: 600; color: #333; height: 38px; overflow: hidden; ">-->
+                                <h4 class="product-name">
+    Techie HDMI to VGA Converter â€“ 1080P Full HD</h4>
+                            
+                            
+                            <div class="laptop-price" style="color: #1d1d1f; font-weight: 700; font-size: 16px;">
+                                ₹199                                                                    <span style="font-size: 12px; color: #ff0000; text-decoration: line-through; margin-left: 5px;font-weight: 100; ">
+                                        
+    
+                                        ₹399                                    </span>
+                                                            </div>
+
+                            <!-- Stock Status -->
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide" role="group" aria-label="6 / 10" data-swiper-slide-index="5" style="width: 312.75px; margin-right: 15px;">
+                <a href="product-details.php?id=148" class="refurbished-card " style="text-decoration: none; display: block; height: 100%;">
+                    
+                    <div class="laptop-card" style="margin-bottom: 0; height: 100%; position: relative;">
+                        
+                        <!-- Discount Badge -->
+                                                    <span class="discount-pill" style="position: absolute; top: 10px; right: 10px; background: #ff3b30; color: #fff; font-size: 10px; padding: 2px 8px; border-radius: 20px; z-index: 5;">
+                                -50%
+                            </span>
+                        
+                        <!-- Image Section -->
+                        <div style="height: 140px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="laptopwale.in/dynamic/uploads/images/1778487435_Conv02-1.png" alt="Techie Type-A to USB-C Converter " style="max-height: 100%; width: auto; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
+                        </div>
+                        
+                        <div style="padding: 10px;">
+                            <!--<h4 style="font-size: 14px; font-weight: 600; color: #333; height: 38px; overflow: hidden; ">-->
+                                <h4 class="product-name">
+    Techie Type-A to USB-C Converter </h4>
+                            
+                            
+                            <div class="laptop-price" style="color: #1d1d1f; font-weight: 700; font-size: 16px;">
+                                ₹99                                                                    <span style="font-size: 12px; color: #ff0000; text-decoration: line-through; margin-left: 5px;font-weight: 100; ">
+                                        
+    
+                                        ₹199                                    </span>
+                                                            </div>
+
+                            <!-- Stock Status -->
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide" role="group" aria-label="7 / 10" data-swiper-slide-index="6" style="width: 312.75px; margin-right: 15px;">
+                <a href="javascript:void(0);" class="refurbished-card out-of-stock-card" style="text-decoration: none; display: block; height: 100%;">
+                    
+                    <div class="laptop-card" style="margin-bottom: 0; height: 100%; position: relative;">
+                        
+                        <!-- Discount Badge -->
+                                                    <span class="discount-pill" style="position: absolute; top: 10px; right: 10px; background: #ff3b30; color: #fff; font-size: 10px; padding: 2px 8px; border-radius: 20px; z-index: 5;">
+                                -57%
+                            </span>
+                        
+                        <!-- Image Section -->
+                        <div style="height: 140px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="laptopwale.in/dynamic/uploads/images/1778487114_Conv01.webp" alt="Techie USB Type-C to USB A 3.0 Converter" style="max-height: 100%; width: auto; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
+                        </div>
+                        
+                        <div style="padding: 10px;">
+                            <!--<h4 style="font-size: 14px; font-weight: 600; color: #333; height: 38px; overflow: hidden; ">-->
+                                <h4 class="product-name">
+    Techie USB Type-C to USB A 3.0 Converter</h4>
+                            
+                            
+                            <div class="laptop-price" style="color: #1d1d1f; font-weight: 700; font-size: 16px;">
+                                ₹129                                                                    <span style="font-size: 12px; color: #ff0000; text-decoration: line-through; margin-left: 5px;font-weight: 100; ">
+                                        
+    
+                                        ₹299                                    </span>
+                                                            </div>
+
+                            <!-- Stock Status -->
+                                                            <small style="color: #dc3545; font-weight: 700;">Out of Stock</small>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide" role="group" aria-label="8 / 10" data-swiper-slide-index="7" style="width: 312.75px; margin-right: 15px;">
+                <a href="javascript:void(0);" class="refurbished-card out-of-stock-card" style="text-decoration: none; display: block; height: 100%;">
+                    
+                    <div class="laptop-card" style="margin-bottom: 0; height: 100%; position: relative;">
+                        
+                        <!-- Discount Badge -->
+                                                    <span class="discount-pill" style="position: absolute; top: 10px; right: 10px; background: #ff3b30; color: #fff; font-size: 10px; padding: 2px 8px; border-radius: 20px; z-index: 5;">
+                                -39%
+                            </span>
+                        
+                        <!-- Image Section -->
+                        <div style="height: 140px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="laptopwale.in/dynamic/uploads/images/1777637398_1.png" alt="Techie Laptop Battery for HP HT03XL â€“ 3400mAh 3-Cell for Pavilion 17-BY0152UR" style="max-height: 100%; width: auto; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
+                        </div>
+                        
+                        <div style="padding: 10px;">
+                            <!--<h4 style="font-size: 14px; font-weight: 600; color: #333; height: 38px; overflow: hidden; ">-->
+                                <h4 class="product-name">
+    Techie Laptop Battery for HP HT03XL â€“ 3400mAh 3-Cell for Pavilion 17-BY0152UR</h4>
+                            
+                            
+                            <div class="laptop-price" style="color: #1d1d1f; font-weight: 700; font-size: 16px;">
+                                ₹1,999                                                                    <span style="font-size: 12px; color: #ff0000; text-decoration: line-through; margin-left: 5px;font-weight: 100; ">
+                                        
+    
+                                        ₹3,299                                    </span>
+                                                            </div>
+
+                            <!-- Stock Status -->
+                                                            <small style="color: #dc3545; font-weight: 700;">Out of Stock</small>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide" role="group" aria-label="9 / 10" data-swiper-slide-index="8" style="width: 312.75px; margin-right: 15px;">
+                <a href="javascript:void(0);" class="refurbished-card out-of-stock-card" style="text-decoration: none; display: block; height: 100%;">
+                    
+                    <div class="laptop-card" style="margin-bottom: 0; height: 100%; position: relative;">
+                        
+                        <!-- Discount Badge -->
+                                                    <span class="discount-pill" style="position: absolute; top: 10px; right: 10px; background: #ff3b30; color: #fff; font-size: 10px; padding: 2px 8px; border-radius: 20px; z-index: 5;">
+                                -30%
+                            </span>
+                        
+                        <!-- Image Section -->
+                        <div style="height: 140px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="laptopwale.in/dynamic/uploads/images/1777706458_1.jpg" alt="Techie Compatible Laptop Battery for HP HS03, HS04, 240 G4 Series (2200mAh, 4-Cell)" style="max-height: 100%; width: auto; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
+                        </div>
+                        
+                        <div style="padding: 10px;">
+                            <!--<h4 style="font-size: 14px; font-weight: 600; color: #333; height: 38px; overflow: hidden; ">-->
+                                <h4 class="product-name">
+    Techie Compatible Laptop Battery for HP HS03, HS04, 240 G4 Series (2200mAh, 4-Cell)</h4>
+                            
+                            
+                            <div class="laptop-price" style="color: #1d1d1f; font-weight: 700; font-size: 16px;">
+                                ₹1,396                                                                    <span style="font-size: 12px; color: #ff0000; text-decoration: line-through; margin-left: 5px;font-weight: 100; ">
+                                        
+    
+                                        ₹1,999                                    </span>
+                                                            </div>
+
+                            <!-- Stock Status -->
+                                                            <small style="color: #dc3545; font-weight: 700;">Out of Stock</small>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+
+                        
+            <div class="swiper-slide" role="group" aria-label="10 / 10" data-swiper-slide-index="9" style="width: 312.75px; margin-right: 15px;">
+                <a href="javascript:void(0);" class="refurbished-card out-of-stock-card" style="text-decoration: none; display: block; height: 100%;">
+                    
+                    <div class="laptop-card" style="margin-bottom: 0; height: 100%; position: relative;">
+                        
+                        <!-- Discount Badge -->
+                                                    <span class="discount-pill" style="position: absolute; top: 10px; right: 10px; background: #ff3b30; color: #fff; font-size: 10px; padding: 2px 8px; border-radius: 20px; z-index: 5;">
+                                -10%
+                            </span>
+                        
+                        <!-- Image Section -->
+                        <div style="height: 140px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="laptopwale.in/dynamic/uploads/images/1777706507_2.jpg" alt="Techie 65W Type-C Universal Laptop Charger." style="max-height: 100%; width: auto; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
+                        </div>
+                        
+                        <div style="padding: 10px;">
+                            <!--<h4 style="font-size: 14px; font-weight: 600; color: #333; height: 38px; overflow: hidden; ">-->
+                                <h4 class="product-name">
+    Techie 65W Type-C Universal Laptop Charger.</h4>
+                            
+                            
+                            <div class="laptop-price" style="color: #1d1d1f; font-weight: 700; font-size: 16px;">
+                                ₹899                                                                    <span style="font-size: 12px; color: #ff0000; text-decoration: line-through; margin-left: 5px;font-weight: 100; ">
+                                        
+    
+                                        ₹999                                    </span>
+                                                            </div>
+
+                            <!-- Stock Status -->
+                                                            <small style="color: #dc3545; font-weight: 700;">Out of Stock</small>
+                                                    </div>
+                    </div>
+                </a>
+            </div>
+
+                    </div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+</div>
+
+<div class="compare-wrapper">
+  <img src="laptopwale.in/images/h4.png" class="img-old" />
+
+  <div class="img-overlay">
+    <img src="new%20images/h11.png" style="width: 1481px; min-width: 1481px;" />
+  </div>
+
+  <div class="slider-handle"></div>
+</div>
+
+
+<!-- VIDEO REVIEW SECTION -->
+<div class="container" style="margin-top:60px; margin-bottom:60px;">
+
+    <h2 class="laptop-title text-center">
+        <span style="color:#C12328;">Real</span> Reviews, 
+        <span style="color:#C12328;">Real</span> Experiences
+    </h2>
+
+    <div class="swiper story-carousel mt-4 swiper-initialized swiper-horizontal swiper-backface-hidden">
+        <div class="swiper-wrapper" id="swiper-wrapper-82698cc7c87aa27c" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-655.5px, 0px, 0px); transition-delay: 0ms;">
+
+            
+            <div class="swiper-slide" role="group" aria-label="1 / 7" data-swiper-slide-index="0" style="width: 312.75px; margin-right: 15px;">
+                <div class="story-card">
+                    <video class="customer-video-clip" muted="" loop="" playsinline="">
+                        <source src="laptopwale.in/dynamic/uploads/reviews/1777620721_VID_20260430_234518_842_bsl.mp4" type="video/mp4" />
+                    </video>
+
+                    <button class="audio-control-tag" onclick="handleVideoAudio(this)" fdprocessedid="nkanc">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="swiper-slide swiper-slide-prev" role="group" aria-label="2 / 7" data-swiper-slide-index="1" style="width: 312.75px; margin-right: 15px;">
+                <div class="story-card">
+                    <video class="customer-video-clip" muted="" loop="" playsinline="">
+                        <source src="laptopwale.in/dynamic/uploads/reviews/1777620611_VID_20260430_232307_132_bsl.mp4" type="video/mp4" />
+                    </video>
+
+                    <button class="audio-control-tag" onclick="handleVideoAudio(this)" fdprocessedid="xc2u0p">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="swiper-slide swiper-slide-active" role="group" aria-label="3 / 7" data-swiper-slide-index="2" style="width: 312.75px; margin-right: 15px;">
+                <div class="story-card">
+                    <video class="customer-video-clip" muted="" loop="" playsinline="">
+                        <source src="laptopwale.in/dynamic/uploads/reviews/1777620579_VID_20260430_232115_252_bsl.mp4" type="video/mp4" />
+                    </video>
+
+                    <button class="audio-control-tag" onclick="handleVideoAudio(this)" fdprocessedid="z885z">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="swiper-slide swiper-slide-next" role="group" aria-label="4 / 7" data-swiper-slide-index="3" style="width: 312.75px; margin-right: 15px;">
+                <div class="story-card">
+                    <video class="customer-video-clip" muted="" loop="" playsinline="">
+                        <source src="laptopwale.in/dynamic/uploads/reviews/1777620537_VID_20260430_231805_019_bsl.mp4" type="video/mp4" />
+                    </video>
+
+                    <button class="audio-control-tag" onclick="handleVideoAudio(this)" fdprocessedid="eu0fyn">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="swiper-slide" role="group" aria-label="5 / 7" data-swiper-slide-index="4" style="width: 312.75px; margin-right: 15px;">
+                <div class="story-card">
+                    <video class="customer-video-clip" muted="" loop="" playsinline="">
+                        <source src="laptopwale.in/dynamic/uploads/reviews/1777620439_VID_20260430_222923_766_bsl.mp4" type="video/mp4" />
+                    </video>
+
+                    <button class="audio-control-tag" onclick="handleVideoAudio(this)" fdprocessedid="xiv3mo">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="swiper-slide" role="group" aria-label="6 / 7" data-swiper-slide-index="5" style="width: 312.75px; margin-right: 15px;">
+                <div class="story-card">
+                    <video class="customer-video-clip" muted="" loop="" playsinline="">
+                        <source src="laptopwale.in/dynamic/uploads/reviews/1777620397_VID_20260430_230344_821_bsl.mp4" type="video/mp4" />
+                    </video>
+
+                    <button class="audio-control-tag" onclick="handleVideoAudio(this)" fdprocessedid="gyrjq9">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="swiper-slide" role="group" aria-label="7 / 7" data-swiper-slide-index="6" style="width: 312.75px; margin-right: 15px;">
+                <div class="story-card">
+                    <video class="customer-video-clip" muted="" loop="" playsinline="">
+                        <source src="laptopwale.in/dynamic/uploads/reviews/1777618589_VID_20260430_230043_551_bsl.mp4" type="video/mp4" />
+                    </video>
+
+                    <button class="audio-control-tag" onclick="handleVideoAudio(this)">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            
+        </div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+</div>
+<div class="container-fluid bg-light py-5">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Visit Our Stores</h2>
+        </div>
+
+        <div class="row g-3">
+
+            <!-- BHOPAL -->
+            <div class="col-6 col-md-3">
+                <div class="location-tag mb-1 small fw-bold text-danger">
+                    <i class="fa fa-store me-1"></i><a href="bhopal.php">BHOPAL</a>
+                </div>
+
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps?q=23.2343814,77.4352641&amp;z=15&amp;output=embed" width="100%" height="100%" style="border:0;" loading="lazy">
+                    </iframe>
+                </div>
+
+                <p class="store-address">1st Floor, 52-A, in front of Hotel Sangat Regency, near Manohar Dairy, Zone-I, Maharana Pratap Nagar, Bhopal,M.P.</p>
+            </div>
+
+            <!-- INDORE -->
+            <div class="col-6 col-md-3">
+                <div class="location-tag mb-1 small fw-bold text-danger">
+                    <i class="fa fa-store me-1"></i><a href="indore.php"> INDORE</a>
+                </div>
+
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps?q=22.7188128,75.8694092&amp;z=15&amp;output=embed" width="100%" height="100%" style="border:0;" loading="lazy">
+                    </iframe>
+                </div>
+
+                <p class="store-address">First Floor, Yashwant Plaza, M-81, Railway Station Rd, Flim Colony, Chhoti Gwaltoli, Indore, M.P.</p>
+            </div>
+            <!-- RAIPUR (Coming Soon) -->
+            <div class="col-6 col-md-3">
+                <div class="location-tag mb-1 small fw-bold text-danger">
+                    <i class="fa fa-store me-1"></i><a href="raipur.php"> RAIPUR</a>
+                </div>
+
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps?q=Samvet+Shikhar+Complex+Rajbandha+Maidan+Raipur+Chhattisgarh&amp;z=15&amp;output=embed" width="100%" height="100%" style="border:0;" loading="lazy">
+                    </iframe>
+                    
+                </div>
+                <p class="store-address">No.27, 1st Floor, Samvet shikhar beside Dainik bhaskar office, Raipur, Chattisgarh</p>
+
+            </div>
+            <!-- DELHI (Coming Soon) -->
+            <div class="col-6 col-md-3">
+                <div class="location-tag mb-1 small fw-bold text-danger">
+                    <i class="fa fa-store me-1"></i><a href="delhi.php">DELHI</a>
+                </div>
+
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps?q=507+Siddharth+Building+Nehru+Place+New+Delhi+110019&amp;z=17&amp;output=embed" width="100%" height="100%" style="border:0;" loading="lazy">
+                    </iframe>
+                    
+                </div>
+            <p class="store-address">5th floor, Siddharth Building, Nehru Place, New Delhi, Delhi 110019</p>
+
+            </div>
+
+            
+
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<script>
+var swiper = new Swiper(".laptopSlider", {
+  slidesPerView: 2,
+  spaceBetween: 15,
+  loop: true,
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  breakpoints: {
+    576: { slidesPerView: 2 },
+    768: { slidesPerView: 3 },
+    992: { slidesPerView: 4 }
+  }
+});
+
+
+// ==========================
+// IMAGE COMPARE (UNCHANGED)
+// ==========================
+document.querySelectorAll('.compare-wrapper').forEach(c =&gt; {
+  const o = c.querySelector('.img-overlay');
+  const h = c.querySelector('.slider-handle');
+  const img = o.querySelector('img');
+
+  const updateImageWidth = () =&gt; {
+    const containerWidth = c.offsetWidth;
+    img.style.width = containerWidth + 'px';
+    img.style.minWidth = containerWidth + 'px';
+  };
+
+  updateImageWidth();
+  
+  const resizeObserver = new ResizeObserver(() =&gt; updateImageWidth());
+  resizeObserver.observe(c);
+
+  let drag = false;
+
+  const move = x =&gt; {
+    const r = c.getBoundingClientRect();
+    let p = ((x - r.left) / r.width) * 100;
+    p = Math.max(0, Math.min(100, p));
+    o.style.width = p + '%';
+    h.style.left = p + '%';
+  };
+
+  const start = e =&gt; {
+    drag = true;
+    const clientX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+    move(clientX);
+  };
+
+  const stop = () =&gt; { drag = false; };
+
+  c.addEventListener('mousedown', start);
+  c.addEventListener('touchstart', start, { passive: true });
+
+  window.addEventListener('mousemove', e =&gt; { if (drag) move(e.clientX); });
+  
+  window.addEventListener('touchmove', e =&gt; { 
+    if (drag) {
+      move(e.touches[0].clientX);
+      if(e.cancelable) e.preventDefault(); 
+    }
+  }, { passive: false });
+
+  window.addEventListener('mouseup', stop);
+  window.addEventListener('touchend', stop);
+});
+
+
+// ==========================
+// STORY SWIPER (UPDATED)
+// ==========================
+var storySwiper = new Swiper(".story-carousel", {
+    slidesPerView: 2,
+    spaceBetween: 15,
+    loop: true,
+    autoplay: { 
+        delay: 4000, 
+        disableOnInteraction: false 
+    },
+
+    on: {
+        init: function () {
+            playActiveVideo(this);
+        },
+        slideChange: function () {
+            playActiveVideo(this);
+        }
+    },
+
+    breakpoints: {
+        576: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        992: { slidesPerView: 4 }
+    }
+});
+
+
+// ==========================
+// ACTIVE VIDEO CONTROL
+// ==========================
+function playActiveVideo(swiper) {
+    document.querySelectorAll('.customer-video-clip').forEach(video =&gt; {
+        video.pause();
+        video.muted = true;
+    });
+
+    let activeSlide = swiper.slides[swiper.activeIndex];
+    let video = activeSlide.querySelector('video');
+
+    if (video) {
+        video.play().catch(() =&gt; {});
+    }
+}
+
+
+// ==========================
+// AUDIO BUTTON (MAIN FIX)
+// ==========================
+function handleVideoAudio(btn) {
+    let video = btn.closest('.story-card').querySelector('video');
+
+    // sab videos mute karo except current
+    document.querySelectorAll('.customer-video-clip').forEach(v =&gt; {
+        if (v !== video) {
+            v.muted = true;
+        }
+    });
+
+    if (video.muted) {
+        video.muted = false;
+
+        // ðŸ‘‰ SLIDER STOP
+        storySwiper.autoplay.stop();
+
+        video.play().then(() =&gt; {
+            btn.innerHTML = '&lt;i class="fa-solid fa-volume-high"&gt;&lt;/i&gt;';
+        }).catch(() =&gt; {});
+
+    } else {
+        video.muted = true;
+
+        // ðŸ‘‰ SLIDER START AGAIN
+        storySwiper.autoplay.start();
+
+        btn.innerHTML = '&lt;i class="fa-solid fa-volume-xmark"&gt;&lt;/i&gt;';
+    }
+}
+
+</script>
+<script>
+document.querySelectorAll('.fx-counter').forEach(counter =&gt; {
+  counter.innerText = '0';
+
+  const update = () =&gt; {
+    const target = +counter.getAttribute('data-target');
+    const c = +counter.innerText;
+    const inc = target / 100;
+
+    if (c &lt; target) {
+      counter.innerText = Math.ceil(c + inc);
+      setTimeout(update, 20);
+    } else {
+      counter.innerText = target.toLocaleString();
+    }
+  };
+
+  update();
+});
+</script>
+
+
+
+
+
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechStore | Modern Footer</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <link href="fonts.googleapis.com/css2" rel="stylesheet" />
+
+  <style>
+    :root {
+      --footer-bg: #f5f5f7; /* Apple style light gray background */
+      --accent-blue: #C12328; /* Wahi blue jo header mein hai */
+      --text-dark: #1d1d1f;
+      --text-muted: #86868b;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+    }
+
+    /* ---------- Footer Styling ---------- */
+    .site-footer {
+      background-color: var(--footer-bg);
+      color: var(--text-dark);
+      padding: 80px 0 30px;
+      border-top: 1px solid #d2d2d7;
+      font-size: 0.85rem;
+    }
+
+    .footer-heading {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.2s ease;
+      display: inline-block;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-blue);
+      transform: translateX(5px);
+    }
+
+    /* ---------- Newsletter / Social ---------- */
+    .newsletter-section {
+      border-bottom: 1px solid #d2d2d7;
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+    }
+
+    .newsletter-input-group {
+      max-width: 400px;
+    }
+
+    .newsletter-input-group input {
+      border: 1px solid #d2d2d7;
+      border-radius: 20px 0 0 20px;
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    .newsletter-input-group .btn {
+      border-radius: 0 20px 20px 0;
+      background-color: var(--accent-blue);
+      color: white;
+      padding: 10px 25px;
+      font-weight: 500;
+      border: none;
+    }
+
+    .newsletter-input-group .btn:hover {
+      background-color: #005fb8;
+    }
+
+    /* Social Icons Modern */
+    .social-icons a {
+      width: 38px;
+      height: 38px;
+      background: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: var(--text-dark);
+      margin-right: 10px;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .social-icons a:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-5px);
+    }
+
+    /* Bottom Copyright */
+    .footer-bottom {
+      color: var(--text-muted);
+      border-top: 1px solid #d2d2d7;
+      padding-top: 25px;
+      margin-top: 50px;
+      
+    }
+
+    /* WhatsApp Button Match */
+    
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .footer-animated {
+      animation: fadeInUp 0.8s ease-out;
+    }
+    
+    .unq-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    border-top: 1px solid #f0f0f0;
+    padding: 10px 0;
+    z-index: 9999;
+}
+
+.unq-nav-link {
+    text-decoration: none !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #8E8E93; /* Default Gray */
+    transition: 0.2s ease-in-out;
+}
+
+/* Jab click hoga toh ye color aayega */
+.unq-nav-link.unq-active {
+    color: #C12328 !important;
+}
+
+.unq-nav-link i {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.unq-nav-text {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+/* Background pill for active icon */
+.unq-active .unq-icon-bg {
+    background-color: #fce9ea; /* Light red tint background */
+    padding: 3px 15px;
+    border-radius: 20px;
+    margin-bottom: 2px;
+}
+ @media (max-width: 768px){
+     .footer-bottom {
+      color: var(--text-muted);
+      border-top: 1px solid #d2d2d7;
+      padding-top: 25px;
+      margin-top: 10px;
+      margin-bottom:50px;
+    }
+ }
+ /* Fixed WhatsApp Icon Styling */
+.whatsapp-fix {
+    position: fixed;
+    bottom: 30px;
+    left: 30px; /* Left side fix */
+    width: 60px;
+    height: 60px;
+    background-color: #25d366; /* WhatsApp Green */
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 1000;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.whatsapp-fix:hover {
+    transform: scale(1.1) translateY(-5px);
+    color: #fff;
+    box-shadow: 0 15px 30px rgba(37, 211, 102, 0.5);
+}
+
+/* Tooltip (Optional: Chat with us text) */
+.wa-tooltip {
+    position: absolute;
+    left: 75px;
+    background: #fff;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.whatsapp-fix:hover .wa-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Mobile Responsiveness */
+/* Mobile Responsiveness Updated */
+@media (max-width: 768px) {
+    .whatsapp-fix {
+        /* Bottom se gap badha diya taaki nav bar ya buttons ke upar dikhe */
+        bottom: 80px; 
+        left: 20px;
+        width: 55px;
+        height: 55px;
+        font-size: 28px;
+    }
+    .wa-tooltip {
+        display: none; 
+    }
+}
+  </style>
+
+
+
+<nav class="unq-bottom-nav d-md-none">
+    <div class="container-fluid">
+        <div class="row text-center g-0">
+            <div class="col">
+                <a href="index" class="unq-nav-link ">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="unq-nav-text">Home</span>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="products" class="unq-nav-link ">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span class="unq-nav-text">Categories</span>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="cart" class="unq-nav-link ">
+                    <div class="unq-icon-bg">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <span class="unq-nav-text">Cart</span>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="login" class="unq-nav-link ">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="unq-nav-text">Account</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+  <footer class="site-footer footer-animated">
+    <div class="container">
+      
+      <div class="row newsletter-section align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h4 class="footer-heading mb-1" style="font-size: 1.4rem; color:#C12328;">Laptop Wale</h4>
+          <p class="text-muted mb-0">Subscribe to get updates on our latest products and exclusive offers</p>
+        </div>
+        <div class="col-lg-6">
+          <form class="input-group newsletter-input-group ms-lg-auto">
+            <input type="email" class="form-control" placeholder="Email Address" fdprocessedid="1d2lt5" />
+            <button class="btn" type="submit" fdprocessedid="asz1r">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-6 mb-4">
+          <h6 class="footer-heading">Company</h6>
+          <ul class="footer-links">
+            <li><a href="about">About LaptopWale</a></li>
+            <li><a href="contact">Contact Us</a></li>
+            <li><a href="blogs">Blogs</a></li>
+            <!--<li><a href="#">Career</a></li>-->
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-6 mb-4">
+          <h6 class="footer-heading">Support</h6>
+          <ul class="footer-links">
+            <li><a href="shipping">Shipping Info</a></li>
+            <li><a href="return_policy">Return Policy</a></li>
+            <li><a href="terms_conditions">Terms &amp; Conditions</a></li>
+           
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-6 mb-4">
+          <h6 class="footer-heading">Shop</h6>
+          <ul class="footer-links">
+            <li><a href="apple_laptops">MacBook Pro</a></li>
+            <li><a href="gaming_laptops">Gaming Laptops</a></li>
+            <li><a href="accessories">Accessories</a></li>
+            <li><a href="business_laptops">Business</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-6 mb-4">
+          <h6 class="footer-heading">Connect With Us</h6>
+          <p class="text-muted small mb-3">Follow us on social media</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/laptop_wale_/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile?id=100092259887663"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@LaptopWale-f3r"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- YAHAN ADD KARNA HAI -->
+      <div class="row mt-4">
+          <div class="col-12">
+              <div class="p-4 rounded-4 bg-white border shadow-sm">
+
+                  <h5 class="fw-bold mb-3 text-danger">
+                      Legal &amp; Compliance Information
+                  </h5>
+
+                  <p class="small text-muted mb-2">
+                      <strong>OmnyX IT Global Private Limited</strong>, 
+                      CIN : U72900MP2020PTC053656 <br />
+                      Compliance Certified
+                  </p>
+                  <p class="small text-muted mb-2">
+                      Registered office at, Shop No-83 plot-52, Zone-I, M.P.Nagar ,Bhopal -462011 Madhya Pradesh, India
+                </p>
+                  <p class="small text-muted mb-2">
+                      For compliance queries or grievances:
+                      <a href="mailto:grievanceofficer@laptopwale.in" class="text-danger text-decoration-none">
+                          grievanceofficer@laptopwale.in
+                      </a>
+                  </p>
+
+                  <p class="small text-muted mb-2">
+                      Country of Refurbishment: India
+                  </p>
+
+                  <p class="small text-muted mb-0" style="line-height:1.7;">
+                      All product names, logos, and brands are property of their
+                      respective owners only. All company names, product and service
+                      names are used for identification purposes only. Use of these
+                      names does not imply endorsement. This page is administered
+                      and operated by OmnyX IT Global Private Limited.
+                  </p>
+                    <p class="small text-muted mb-2">
+                      <strong>LaptopWale is a brand operated by OmnyX IT Global Private Limited </strong> 
+                      
+                  </p>
+              </div>
+          </div>
+      </div>
+
+      <!-- FOOTER BOTTOM -->
+      <div class="footer-bottom d-md-flex justify-content-between text-center text-md-start">
+        <p class="mb-2">© 2026 Powered by OmnyX IT Global PVT. LTD.</p>
+        <div class="footer-links d-inline-block">
+          <a href="privacy_policy" class="me-3 small">Privacy</a>
+          <a href="terms_conditions" class="me-3 small">Terms</a>
+          <!--<a href="#" class="small">Cookies</a>-->
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+<!-- Fixed WhatsApp Button -->
+<!-- Fixed WhatsApp Button -->
+<a href="https://wa.me/919713649049?text=Hi!%20I%20am%20interested%20in%20a%20laptop.%20Please%20share%20the%20available%20stock%20and%20offers.%20%0A%0AFrom:%20laptopwale.in" class="whatsapp-fix" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="wa-tooltip">Quick Inquiry</span>
+</a>
+ <script>
+     function setActive(element) {
+    // Sabse pehle saari purani active classes hata do
+    const allLinks = document.querySelectorAll('.unq-nav-link');
+    allLinks.forEach(link =&gt; {
+        link.classList.remove('unq-active');
+        
+        // Agar aapne icon ke piche background div (pill) rakha hai toh use handle karein
+        const iconBg = link.querySelector('.unq-icon-bg');
+        if (iconBg) {
+            // Isko toggle karne ki zarurat nahi, CSS handle kar lega
+        }
+    });
+
+    // Jis par click kiya usme active class add kar do
+    element.classList.add('unq-active');
+    
+    // Note: Agar aap page redirect kar rahe hain (e.g. href="cart.php"), 
+    // toh aapko PHP check use karna hoga class add karne ke liye.
+}
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<span id="PING_CONTENT_PUSH_NOTIFICATION" style="display: none;"></span><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"></grammarly-desktop-integration></body></html>
+

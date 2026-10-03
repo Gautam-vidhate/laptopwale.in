@@ -1,0 +1,2646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaptopWale & Tech Life | Certified Refurbished Laptops, Instant Device Buyback & Precision Chip-Level Repairs</title>
+    <meta name="description" content="India's leading destination for certified refurbished laptops across all generations, instant AI laptop valuation & buyback, and certified chip-level motherboard and smartphone repairs with warranty." />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="new%20images/tag.png" />
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit for Royal Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Bootstrap 5 & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <style>
+        :root {
+            --primary: #C12328;
+            --primary-glow: rgba(193, 35, 40, 0.25);
+            --primary-dark: #96171b;
+            --accent-gold: #f59e0b;
+            --accent-green: #10b981;
+            --accent-cyan: #06b6d4;
+            --dark-bg: #090d16;
+            --dark-card: #111827;
+            --dark-border: rgba(255, 255, 255, 0.08);
+            --light-bg: #f8fafc;
+            --light-card: #ffffff;
+            --text-heading: #0f172a;
+            --text-body: #475569;
+            --text-muted: #94a3b8;
+            --glass-bg: rgba(255, 255, 255, 0.88);
+            --glass-border: rgba(226, 232, 240, 0.8);
+            --shadow-subtle: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+            --shadow-card: 0 10px 30px -4px rgba(15, 23, 42, 0.08);
+            --shadow-glow: 0 0 30px rgba(193, 35, 40, 0.18);
+            --radius-md: 16px;
+            --radius-lg: 24px;
+        }
+
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-heading);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6, .brand-font {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        /* 1. TOP LIVE TICKER / ANNOUNCEMENT BAR */
+        .royal-ticker-bar {
+            background: linear-gradient(90deg, #111827 0%, #1a0809 50%, #111827 100%);
+            color: #e2e8f0;
+            font-size: 13px;
+            padding: 9px 0;
+            border-bottom: 1px solid rgba(193, 35, 40, 0.3);
+            position: relative;
+            z-index: 1050;
+        }
+
+        .ticker-marquee {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .ticker-track {
+            display: inline-flex;
+            animation: marquee 35s linear infinite;
+        }
+
+        .ticker-item {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 48px;
+            font-weight: 500;
+        }
+
+        .ticker-item i {
+            color: #ff4d4f;
+            margin-right: 8px;
+            font-size: 14px;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* 2. ROYAL NAVIGATION BAR */
+        .navbar-custom {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 14px 0;
+            transition: all 0.3s ease;
+        }
+
+        .brand-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .brand-logo-img {
+            height: 46px;
+            width: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+            transition: transform 0.25s ease;
+        }
+
+        .brand-logo-img:hover {
+            transform: scale(1.04);
+        }
+
+        .certified-pill {
+            background: #fff;
+            border: 1px solid rgba(193, 35, 40, 0.2);
+            padding: 4px 10px;
+            border-radius: 30px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 2px 6px rgba(193, 35, 40, 0.08);
+        }
+
+        .certified-pill img {
+            height: 18px;
+            width: auto;
+        }
+
+        .certified-pill span {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-link-custom {
+            font-weight: 600;
+            font-size: 14px;
+            color: #334155 !important;
+            padding: 8px 14px !important;
+            border-radius: 10px;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .nav-link-custom:hover, .nav-link-custom.active {
+            color: var(--primary) !important;
+            background: rgba(193, 35, 40, 0.06);
+        }
+
+        .nav-ai-badge {
+            background: linear-gradient(135deg, #C12328, #f59e0b);
+            color: white;
+            font-size: 10px;
+            font-weight: 800;
+            padding: 2px 6px;
+            border-radius: 6px;
+            margin-left: 4px;
+            display: inline-block;
+            box-shadow: 0 2px 5px rgba(193, 35, 40, 0.3);
+            animation: pulse-glow 2s infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.85; transform: scale(1.05); }
+        }
+
+        .btn-royal-primary {
+            background: linear-gradient(135deg, #C12328 0%, #a0151a 100%);
+            color: #ffffff !important;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 10px 22px;
+            border-radius: 50px;
+            border: none;
+            box-shadow: 0 4px 14px var(--primary-glow);
+            transition: all 0.25s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+        }
+
+        .btn-royal-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(193, 35, 40, 0.35);
+            background: linear-gradient(135deg, #d3272d 0%, #b3191f 100%);
+        }
+
+        .btn-royal-outline {
+            background: transparent;
+            color: var(--primary) !important;
+            border: 1.5px solid var(--primary);
+            font-weight: 600;
+            font-size: 14px;
+            padding: 9px 20px;
+            border-radius: 50px;
+            transition: all 0.25s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+        }
+
+        .btn-royal-outline:hover {
+            background: rgba(193, 35, 40, 0.08);
+            transform: translateY(-2px);
+        }
+
+        /* 3. HERO SECTION */
+        .hero-section {
+            position: relative;
+            background: radial-gradient(circle at 80% 20%, rgba(193, 35, 40, 0.07) 0%, transparent 50%),
+                        linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+            padding: 60px 0 80px 0;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .hero-pill-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(193, 35, 40, 0.08);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(193, 35, 40, 0.2);
+        }
+
+        .hero-title {
+            font-size: clamp(2.3rem, 4.5vw, 3.8rem);
+            font-weight: 800;
+            line-height: 1.15;
+            color: #0f172a;
+            margin-bottom: 20px;
+        }
+
+        .hero-title .highlight {
+            background: linear-gradient(135deg, #C12328 0%, #e11d48 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-desc {
+            font-size: 1.12rem;
+            color: #475569;
+            line-height: 1.6;
+            margin-bottom: 32px;
+            max-width: 580px;
+        }
+
+        .hero-stats-row {
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(0,0,0,0.08);
+        }
+
+        .hero-stat-item h3 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 2px;
+        }
+
+        .hero-stat-item p {
+            font-size: 12px;
+            color: #64748b;
+            font-weight: 600;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Hero Banner Interactive Container */
+        .hero-visual-card {
+            background: #0f172a;
+            border-radius: var(--radius-lg);
+            padding: 16px;
+            box-shadow: 0 20px 50px -10px rgba(15, 23, 42, 0.25), 0 0 0 1px rgba(255,255,255,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-banner-img {
+            width: 100%;
+            height: auto;
+            border-radius: calc(var(--radius-lg) - 4px);
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .banner-switch-tabs {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 4px;
+            border-radius: 30px;
+            display: flex;
+            gap: 4px;
+            z-index: 10;
+        }
+
+        .banner-tab-btn {
+            background: transparent;
+            border: none;
+            color: #cbd5e1;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 20px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .banner-tab-btn.active {
+            background: var(--primary);
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(193, 35, 40, 0.4);
+        }
+
+        /* 4. BRAND LOGO STRIP */
+        .brands-strip {
+            background: #ffffff;
+            padding: 30px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .brand-logos-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .brand-logo-item {
+            height: 40px;
+            max-width: 120px;
+            object-fit: contain;
+            filter: grayscale(100%) contrast(80%);
+            opacity: 0.65;
+            transition: all 0.3s ease;
+        }
+
+        .brand-logo-item:hover {
+            filter: grayscale(0%) contrast(100%);
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        /* 5. AI FEATURE 1: AI MATCHMAKER CARD */
+        .ai-section {
+            background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .section-header-tag {
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .section-main-title {
+            font-size: clamp(2rem, 3vw, 2.7rem);
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 16px;
+        }
+
+        .ai-tool-card {
+            background: #ffffff;
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            box-shadow: var(--shadow-card);
+            padding: 36px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ai-tool-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #C12328, #f59e0b, #3b82f6);
+        }
+
+        .step-label {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .custom-select-box {
+            border: 1.5px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 12px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1e293b;
+            width: 100%;
+            outline: none;
+            background-color: #f8fafc;
+            transition: all 0.2s ease;
+        }
+
+        .custom-select-box:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px var(--primary-glow);
+            background-color: #fff;
+        }
+
+        .ai-result-display {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            border-radius: 18px;
+            padding: 24px;
+            color: #fff;
+            display: none;
+            animation: fadeIn 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .match-score-badge {
+            background: rgba(16, 185, 129, 0.2);
+            color: #34d399;
+            border: 1px solid rgba(16, 185, 129, 0.4);
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* 6. BUDGET TILES */
+        .budget-banner-card {
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: var(--shadow-subtle);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(0,0,0,0.06);
+            background: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .budget-banner-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-card);
+            border-color: rgba(193, 35, 40, 0.3);
+        }
+
+        .budget-banner-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .budget-banner-card .overlay-btn {
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(17, 24, 39, 0.85);
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 6px 16px;
+            border-radius: 20px;
+            backdrop-filter: blur(8px);
+            opacity: 0;
+            transition: all 0.25s ease;
+        }
+
+        .budget-banner-card:hover .overlay-btn {
+            opacity: 1;
+            bottom: 18px;
+        }
+
+        /* 7. PRODUCT CARDS & INVENTORY */
+        .filter-tabs-wrapper {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding-bottom: 12px;
+            scrollbar-width: none;
+        }
+
+        .filter-tabs-wrapper::-webkit-scrollbar { display: none; }
+
+        .filter-btn-pill {
+            padding: 9px 20px;
+            border-radius: 40px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            color: #475569;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+
+        .filter-btn-pill:hover, .filter-btn-pill.active {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+            box-shadow: 0 4px 12px var(--primary-glow);
+        }
+
+        .product-card {
+            background: #ffffff;
+            border-radius: 18px;
+            border: 1px solid #f1f5f9;
+            padding: 20px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 36px -8px rgba(15, 23, 42, 0.12);
+            border-color: rgba(193, 35, 40, 0.25);
+        }
+
+        .product-badge-wrap {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 2;
+        }
+
+        .badge-certified {
+            background: var(--primary);
+            color: #fff;
+            font-size: 10px;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 6px rgba(193, 35, 40, 0.3);
+        }
+
+        .badge-warranty {
+            background: #0f172a;
+            color: #38bdf8;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 20px;
+        }
+
+        .product-img-wrap {
+            height: 190px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            background: #f8fafc;
+            border-radius: 14px;
+            padding: 14px;
+            overflow: hidden;
+        }
+
+        .product-img-wrap img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover .product-img-wrap img {
+            transform: scale(1.08);
+        }
+
+        .product-category-text {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .product-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 10px;
+            line-height: 1.35;
+        }
+
+        .spec-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 16px;
+        }
+
+        .spec-chip {
+            background: #f1f5f9;
+            color: #334155;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 6px;
+        }
+
+        .pricing-row {
+            margin-top: auto;
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .sale-price {
+            font-size: 1.45rem;
+            font-weight: 800;
+            color: var(--primary);
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .mrp-price {
+            font-size: 0.88rem;
+            color: #94a3b8;
+            text-decoration: line-through;
+            font-weight: 500;
+        }
+
+        .discount-tag {
+            font-size: 11px;
+            font-weight: 700;
+            color: #10b981;
+            background: rgba(16, 185, 129, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .btn-card-action {
+            width: 100%;
+            border-radius: 10px;
+            padding: 9px;
+            font-weight: 600;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+
+        /* 8. AI FEATURE 2: INSTANT DEVICE VALUATION & BUYBACK */
+        .valuation-section {
+            background: #0f172a;
+            color: #ffffff;
+            padding: 85px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .valuation-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: 36px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .valuation-input {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #fff;
+            border-radius: 10px;
+            padding: 12px 14px;
+            font-size: 14px;
+            width: 100%;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .valuation-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(193, 35, 40, 0.3);
+            color: #fff;
+        }
+
+        .valuation-input option {
+            background: #1e293b;
+            color: #fff;
+        }
+
+        .quote-box {
+            background: linear-gradient(135deg, rgba(193, 35, 40, 0.15) 0%, rgba(30, 41, 59, 0.9) 100%);
+            border: 1px solid rgba(193, 35, 40, 0.4);
+            border-radius: 18px;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .quote-amount {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #fbbf24;
+            font-family: 'Outfit', sans-serif;
+            margin: 10px 0;
+        }
+
+        /* 9. REAL CHIP-LEVEL WORKSHOP & LAB GALLERY */
+        .lab-section {
+            background: #ffffff;
+            padding: 85px 0;
+        }
+
+        .lab-photo-card {
+            position: relative;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            border: 1px solid rgba(0,0,0,0.06);
+            height: 280px;
+            margin-bottom: 24px;
+            cursor: pointer;
+        }
+
+        .lab-photo-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .lab-photo-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .lab-photo-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 40%, rgba(15, 23, 42, 0.9) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+            color: #ffffff;
+        }
+
+        .lab-photo-overlay h4 {
+            font-size: 1.15rem;
+            margin-bottom: 4px;
+        }
+
+        .lab-photo-overlay p {
+            font-size: 12px;
+            color: #cbd5e1;
+            margin: 0;
+        }
+
+        /* 10. AI FEATURE 3: DIAGNOSTIC & REPAIR ESTIMATOR */
+        .diagnostic-card {
+            background: #ffffff;
+            border-radius: var(--radius-lg);
+            border: 1px solid #e2e8f0;
+            padding: 30px;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .symptom-tag-btn {
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            color: #334155;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .symptom-tag-btn:hover, .symptom-tag-btn.active {
+            background: #0f172a;
+            color: #ffffff;
+            border-color: #0f172a;
+        }
+
+        /* 11. SMARTPHONE & GADGET HUB */
+        .smartphone-card {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .smartphone-card:hover {
+            transform: translateY(-4px);
+            background: #ffffff;
+            border-color: rgba(193, 35, 40, 0.25);
+            box-shadow: var(--shadow-card);
+        }
+
+        .service-icon-wrap {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: rgba(193, 35, 40, 0.1);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        /* 12. FLOATING PURCHASE NOTIFICATION TOAST */
+        .live-purchase-toast {
+            position: fixed;
+            bottom: 24px;
+            left: 24px;
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 14px 18px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+            border-left: 4px solid var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            z-index: 1040;
+            max-width: 340px;
+            transform: translateX(-150%);
+            transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .live-purchase-toast.active {
+            transform: translateX(0);
+        }
+
+        .toast-user-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #fee2e2;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        /* 13. FLOATING TECHGENIE AI CHATBOT */
+        .ai-chat-launcher {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #C12328 0%, #0f172a 100%);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            box-shadow: 0 8px 25px rgba(193, 35, 40, 0.4);
+            cursor: pointer;
+            z-index: 1040;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .ai-chat-launcher:hover {
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        .ai-chat-window {
+            position: fixed;
+            bottom: 95px;
+            right: 24px;
+            width: 360px;
+            height: 490px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+            border: 1px solid #e2e8f0;
+            display: none;
+            flex-direction: column;
+            z-index: 1045;
+            overflow: hidden;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #fff;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .chat-body {
+            flex: 1;
+            padding: 16px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background: #f8fafc;
+        }
+
+        .chat-msg {
+            padding: 10px 14px;
+            border-radius: 14px;
+            font-size: 13px;
+            line-height: 1.4;
+            max-width: 82%;
+        }
+
+        .chat-msg.bot {
+            background: #ffffff;
+            color: #1e293b;
+            align-self: flex-start;
+            border: 1px solid #e2e8f0;
+            border-bottom-left-radius: 2px;
+        }
+
+        .chat-msg.user {
+            background: var(--primary);
+            color: #ffffff;
+            align-self: flex-end;
+            border-bottom-right-radius: 2px;
+        }
+
+        .chat-chip-btn {
+            background: #ffffff;
+            border: 1px solid rgba(193, 35, 40, 0.3);
+            color: var(--primary);
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin: 3px 2px;
+            transition: all 0.2s;
+        }
+
+        .chat-chip-btn:hover {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        .chat-footer {
+            padding: 12px;
+            background: #ffffff;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            gap: 8px;
+        }
+
+        .chat-input {
+            flex: 1;
+            border: 1px solid #cbd5e1;
+            border-radius: 30px;
+            padding: 8px 16px;
+            font-size: 13px;
+            outline: none;
+        }
+
+        /* 14. FOOTER */
+        .royal-footer {
+            background: #090d16;
+            color: #cbd5e1;
+            padding: 70px 0 30px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .footer-heading {
+            color: #ffffff;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Responsive Tweaks */
+        @media (max-width: 991px) {
+            .hero-section {
+                padding: 40px 0 60px 0;
+            }
+            .hero-stats-row {
+                flex-wrap: wrap;
+                gap: 18px;
+            }
+            .ai-chat-window {
+                width: 90vw;
+                right: 5vw;
+                bottom: 85px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. TOP LIVE TICKER / NOTICE BAR -->
+    <div class="royal-ticker-bar">
+        <div class="container-fluid px-3">
+            <div class="ticker-marquee">
+                <div class="ticker-track">
+                    <span class="ticker-item"><i class="bi bi-shield-check"></i> 45-Point Rigorous Engineering Inspection on All Laptops</span>
+                    <span class="ticker-item"><i class="bi bi-truck"></i> Free Insured Express Delivery Above â‚¹24,999/-</span>
+                    <span class="ticker-item"><i class="bi bi-arrow-repeat"></i> 7-Day Hassle-Free Replacement â€¢ Up to 1-Year Comprehensive Warranty</span>
+                    <span class="ticker-item"><i class="bi bi-cpu"></i> Certified Precision Chip-Level Motherboard & Smartphone Repair Center</span>
+                    <span class="ticker-item"><i class="bi bi-instagram text-danger"></i> Follow <a href="https://www.instagram.com/tech_life_07_?stkn=MWQ5ZnA5N3UwZDFvZw==" target="_blank" class="text-white text-decoration-none fw-bold">@tech_life_07_</a> on Instagram for Live Testing & Daily Deals</span>
+                    <span class="ticker-item"><i class="bi bi-telephone"></i> Direct Helpline & WhatsApp: +91 93092 48726</span>
+                    <!-- Seamless loop duplicate -->
+                    <span class="ticker-item"><i class="bi bi-shield-check"></i> 45-Point Rigorous Engineering Inspection on All Laptops</span>
+                    <span class="ticker-item"><i class="bi bi-truck"></i> Free Insured Express Delivery Above ₹24,999/-</span>
+                    <span class="ticker-item"><i class="bi bi-arrow-repeat"></i> 7-Day Hassle-Free Replacement • Up to 1-Year Comprehensive Warranty</span>
+                    <span class="ticker-item"><i class="bi bi-cpu"></i> Certified Precision Chip-Level Motherboard & Smartphone Repair Center</span>
+                    <span class="ticker-item"><i class="bi bi-currency-rupee"></i> Instant Cash Valuation & Doorstep Buyback Payout</span>
+                    <span class="ticker-item"><i class="bi bi-instagram text-danger"></i> Follow <a href="https://www.instagram.com/tech_life_07_?stkn=MWQ5ZnA5N3UwZDFvZw==" target="_blank" class="text-white text-decoration-none fw-bold">@tech_life_07_</a> on Instagram for Live Testing & Daily Deals</span>
+                    <span class="ticker-item"><i class="bi bi-telephone"></i> Direct Helpline & WhatsApp: +91 93092 48726</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. ROYAL MAIN NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top" id="mainNav">
+        <div class="container">
+            <!-- Brand Logo & Certified Tag -->
+            <a class="brand-wrapper" href="#home">
+                <img src="new%20images/newlogo.png" alt="Tech Life & LaptopWale" class="brand-logo-img" />
+                <div class="certified-pill d-none d-sm-inline-flex">
+                    <img src="new%20images/tag.png" alt="Certified" />
+                    <span>Certified Store</span>
+                </div>
+            </a>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2 text-dark"></i>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#ai-matchmaker">
+                            AI Matchmaker <span class="nav-ai-badge">NEW</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#laptops">Refurbished Laptops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#valuation">Sell Laptop / Cash</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#repairs">Chip-Level Lab</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#smartphones">Smartphones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#accessories">Accessories</a>
+                    </li>
+                </ul>
+
+                <!-- Right Action Buttons -->
+                <div class="d-flex align-items-center gap-2">
+                    <a href="https://www.instagram.com/tech_life_07_?stkn=MWQ5ZnA5N3UwZDFvZw==" target="_blank" class="btn btn-outline-danger btn-sm rounded-pill px-3 d-none d-lg-inline-flex align-items-center gap-1" style="border-color: #e1306c; color: #e1306c !important;">
+                        <i class="bi bi-instagram"></i> @tech_life_07_
+                    </a>
+                    <a href="https://wa.me/919309248726?text=Hello%20LaptopWale,%20I%20want%20to%20inquire%20about%20a%20laptop" target="_blank" class="btn btn-royal-outline d-none d-md-inline-flex">
+                        <i class="bi bi-whatsapp text-success fs-6"></i> WhatsApp
+                    </a>
+                    <a href="#ai-matchmaker" class="btn btn-royal-primary">
+                        <i class="bi bi-stars"></i> Find My Laptop
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. HERO SECTION WITH ROYAL SHOWCASE & INTERACTIVE HOTSPOTS -->
+    <header class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="hero-pill-tag">
+                        <i class="bi bi-patch-check-fill text-danger"></i> LaptopWale â€¢ Certified Refurbished Hub
+                    </div>
+                    <h1 class="hero-title">
+                        Engineered for Performance. <br />
+                        <span class="highlight">Certified for Life.</span>
+                    </h1>
+                    <p class="hero-desc">
+                        Explore India's most trusted inventory of Grade-A+ refurbished laptops across all generations (Core i3 to i9, AMD Ryzen & Apple M-Series). Backed by 45+ point testing, instant buyback valuation, and our in-house chip-level precision repair lab.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#laptops" class="btn btn-royal-primary py-3 px-4 fs-6">
+                            <i class="bi bi-laptop"></i> Explore Laptops (From â‚¹11,999)
+                        </a>
+                        <a href="#valuation" class="btn btn-royal-outline py-3 px-4 fs-6">
+                            <i class="bi bi-cash-stack"></i> Instant Sell Valuation
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="hero-stats-row">
+                        <div class="hero-stat-item">
+                            <h3>50,000+</h3>
+                            <p>Delivered Across India</p>
+                        </div>
+                        <div class="hero-stat-item">
+                            <h3>45-Point</h3>
+                            <p>Rigorous QA Tested</p>
+                        </div>
+                        <div class="hero-stat-item">
+                            <h3>1-Year</h3>
+                            <p>Comprehensive Warranty</p>
+                        </div>
+                        <div class="hero-stat-item">
+                            <h3>4.9 â˜…</h3>
+                            <p>1,240+ Verified Reviews</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Visual Showcase with Toggle -->
+                <div class="col-lg-6">
+                    <div class="hero-visual-card">
+                        <!-- Switcher between Crimson Carbon & Ultra Sleek -->
+                        <div class="banner-switch-tabs">
+                            <button class="banner-tab-btn active" id="btnBannerRed" onclick="switchHeroBanner('red')">
+                                <i class="bi bi-fire"></i> Crimson Edition
+                            </button>
+                            <button class="banner-tab-btn" id="btnBannerCosmic" onclick="switchHeroBanner('cosmic')">
+                                <i class="bi bi-stars"></i> Silver Titanium
+                            </button>
+                        </div>
+
+                        <!-- Active Showcase Image -->
+                        <img src="IMAGES/h4.png" id="heroBannerImg" alt="LaptopWale Showcase" class="hero-banner-img" />
+
+                        <!-- Hotspot Highlights Overlay -->
+                        <div class="p-3 bg-dark text-white rounded-3 mt-3 d-flex justify-content-between align-items-center flex-wrap gap-2">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="badge bg-danger rounded-circle p-2"><i class="bi bi-check2"></i></span>
+                                <small class="text-white-50">Keyboard: <strong class="text-white">Backlit Ergo-Keys</strong></small>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="badge bg-danger rounded-circle p-2"><i class="bi bi-check2"></i></span>
+                                <small class="text-white-50">Display: <strong class="text-white">100% sRGB FHD Bezel-less</strong></small>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="badge bg-danger rounded-circle p-2"><i class="bi bi-check2"></i></span>
+                                <small class="text-white-50">Battery: <strong class="text-white">100% Health Tested</strong></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 4. OFFICIAL BRAND LOGO STRIP -->
+    <section class="brands-strip">
+        <div class="container">
+            <div class="text-center mb-3">
+                <span class="text-muted fw-bold text-uppercase" style="font-size: 11px; letter-spacing: 1.5px;">
+                    Authorized Refurbished, Upgrades & Chip-Level Support For Top Brands
+                </span>
+            </div>
+            <div class="brand-logos-container">
+                <img src="new%20images/1.png" alt="Asus" class="brand-logo-item" title="ASUS" />
+                <img src="new%20images/2.png" alt="HP" class="brand-logo-item" title="HP" />
+                <img src="new%20images/3.png" alt="Dell" class="brand-logo-item" title="Dell" />
+                <img src="new%20images/44.png" alt="Lenovo" class="brand-logo-item" title="Lenovo ThinkPad" />
+                <img src="new%20images/55.png" alt="Apple" class="brand-logo-item" title="Apple MacBook" />
+                <img src="new%20images/6.png" alt="Acer" class="brand-logo-item" title="Acer" />
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. ðŸŒŸ AI FEATURE 1: AI LAPTOP MATCHMAKER (INTERACTIVE FINDER) -->
+    <section class="ai-section" id="ai-matchmaker">
+        <div class="container">
+            <div class="text-center max-w-700 mx-auto mb-5">
+                <span class="section-header-tag"><i class="bi bi-stars"></i> Next-Gen Smart Assistant</span>
+                <h2 class="section-main-title">AI Laptop Matchmaker</h2>
+                <p class="text-muted">
+                    Not sure which machine suits your workflow? Answer 3 quick questions. Our AI matching algorithm will calculate the ideal refurbished laptop with maximum value for your exact needs.
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="ai-tool-card">
+                        <div class="row g-4 align-items-center">
+                            <!-- Question 1: Purpose -->
+                            <div class="col-md-4">
+                                <span class="step-label">Step 1: Primary Usage</span>
+                                <select class="custom-select-box" id="aiPurpose">
+                                    <option value="coding">ðŸ’» Coding & Software Dev</option>
+                                    <option value="business" selected>ðŸ“Š Business, Office & Tally</option>
+                                    <option value="design">ðŸŽ¨ Graphic Design & Video 4K</option>
+                                    <option value="gaming">ðŸŽ® Gaming & High Graphics</option>
+                                    <option value="student">ðŸŽ“ College, School & Everyday</option>
+                                </select>
+                            </div>
+
+                            <!-- Question 2: Budget -->
+                            <div class="col-md-4">
+                                <span class="step-label">Step 2: Target Budget</span>
+                                <select class="custom-select-box" id="aiBudget">
+                                    <option value="under15">ðŸ’° Under â‚¹15,000 (Budget Friendly)</option>
+                                    <option value="under30" selected>âš¡ â‚¹15,000 â€“ â‚¹30,000 (Most Popular)</option>
+                                    <option value="under45">ðŸš€ â‚¹30,000 â€“ â‚¹45,000 (High Performance)</option>
+                                    <option value="premium">ðŸ‘‘ â‚¹45,000+ (MacBook / Flagship)</option>
+                                </select>
+                            </div>
+
+                            <!-- Question 3: Form Factor / Brand Preference -->
+                            <div class="col-md-4">
+                                <span class="step-label">Step 3: Preferred Brand</span>
+                                <select class="custom-select-box" id="aiBrand">
+                                    <option value="any" selected>âœ¨ Any Best Value Brand</option>
+                                    <option value="dell">Dell (Latitude / Inspiron)</option>
+                                    <option value="lenovo">Lenovo (ThinkPad Series)</option>
+                                    <option value="hp">HP (EliteBook / ProBook)</option>
+                                    <option value="apple">Apple (MacBook Pro / Air)</option>
+                                    <option value="asus">Asus (ROG / ZenBook)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Action Button -->
+                        <div class="text-center mt-4">
+                            <button class="btn btn-royal-primary py-3 px-5 fs-6" onclick="runAiMatchmaker()">
+                                <i class="bi bi-cpu-fill"></i> Run AI Match Analysis
+                            </button>
+                        </div>
+
+                        <!-- AI Result Container -->
+                        <div class="ai-result-display mt-4" id="aiResultBox">
+                            <div class="row align-items-center g-4">
+                                <div class="col-md-4 text-center">
+                                    <img id="aiResultImg" src="dynamic/uploads/images/1775828709_buy-dell-latitude-3420-i5-11th-gen-refurbished-laptop-india.jpg" alt="Recommended Laptop" class="img-fluid rounded-3 bg-white p-2" style="max-height: 180px;" />
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <span class="match-score-badge" id="aiMatchScore"><i class="bi bi-patch-check-fill"></i> 98% Compatibility Match</span>
+                                        <span class="badge bg-danger">Grade A+ Mint</span>
+                                    </div>
+                                    <h4 class="text-white mb-2" id="aiResultTitle">Dell Latitude 3420 (Core i5 11th Gen)</h4>
+                                    <p class="text-white-50 small mb-2" id="aiResultReason">
+                                        Perfect sweet spot for multitasking with 16GB High-Speed DDR4 RAM, lightning fast NVMe SSD, and 8+ hour battery endurance.
+                                    </p>
+                                    <div class="d-flex gap-2 flex-wrap" id="aiResultSpecs">
+                                        <span class="badge bg-secondary">16GB RAM</span>
+                                        <span class="badge bg-secondary">512GB NVMe SSD</span>
+                                        <span class="badge bg-secondary">Intel Iris Xe</span>
+                                        <span class="badge bg-secondary">1-Year Warranty</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 text-center text-md-end">
+                                    <div class="text-white-50 small">LaptopWale Deal Price:</div>
+                                    <div class="fs-2 fw-bold text-warning font-monospace" id="aiResultPrice">â‚¹27,999</div>
+                                    <div class="text-white-50 text-decoration-line-through small" id="aiResultMrp">MRP: â‚¹75,000</div>
+                                    <a id="aiWhatsappBtn" href="https://wa.me/919309248726?text=Hi%20LaptopWale,%20AI%20recommended%20Dell%20Latitude%203420%20for%20me" target="_blank" class="btn btn-success btn-sm w-100 mt-2 py-2 fw-bold">
+                                        <i class="bi bi-whatsapp"></i> Book Demo on WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SHOP BY BUDGET CARDS (USING OFFICIAL 15.PNG, 30.PNG, 40.PNG) -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-end mb-4">
+                <div class="col-md-8">
+                    <span class="section-header-tag">Tailored For Every Pocket</span>
+                    <h2 class="section-main-title mb-0">Shop Laptops by Price Bracket</h2>
+                </div>
+                <div class="col-md-4 text-md-end mt-2 mt-md-0">
+                    <span class="text-muted fw-bold small"><i class="bi bi-check-circle-fill text-success"></i> All Include Power Adapter & Warranty</span>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Under 15k Card -->
+                <div class="col-md-4" onclick="filterByBudget('15k')">
+                    <div class="budget-banner-card">
+                        <img src="IMAGES/15.png" alt="Under â‚¹15,000 Laptops" />
+                        <div class="overlay-btn">View Under 15K Laptops <i class="bi bi-arrow-right"></i></div>
+                    </div>
+                </div>
+                <!-- Under 30k Card -->
+                <div class="col-md-4" onclick="filterByBudget('30k')">
+                    <div class="budget-banner-card">
+                        <img src="IMAGES/30.png" alt="Under â‚¹30,000 Laptops" />
+                        <div class="overlay-btn">View Under 30K Laptops <i class="bi bi-arrow-right"></i></div>
+                    </div>
+                </div>
+                <!-- Under 40k Card -->
+                <div class="col-md-4" onclick="filterByBudget('40k')">
+                    <div class="budget-banner-card">
+                        <img src="IMAGES/40.png" alt="Under â‚¹40,000 Laptops" />
+                        <div class="overlay-btn">View Under 40K Laptops <i class="bi bi-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CERTIFIED REFURBISHED LAPTOP INVENTORY SHOWCASE -->
+    <section class="py-5" id="laptops" style="background-color: #f8fafc;">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 gap-3">
+                <div>
+                    <span class="section-header-tag">Live Certified Stock</span>
+                    <h2 class="section-main-title mb-0">Handpicked Refurbished Laptops</h2>
+                </div>
+                <!-- Category Pills Filter -->
+                <div class="filter-tabs-wrapper">
+                    <button class="filter-btn-pill active" onclick="filterCatalog('all', this)">All Stock</button>
+                    <button class="filter-btn-pill" onclick="filterCatalog('business', this)">Business Series</button>
+                    <button class="filter-btn-pill" onclick="filterCatalog('apple', this)">Apple MacBooks</button>
+                    <button class="filter-btn-pill" onclick="filterCatalog('gaming', this)">Gaming & 3D</button>
+                    <button class="filter-btn-pill" onclick="filterCatalog('budget', this)">Under â‚¹20,000</button>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="row g-4" id="laptopGrid">
+                <!-- Laptop 1: Dell Latitude 3420 -->
+                <div class="col-lg-4 col-md-6 laptop-item" data-category="business" data-budget="30k">
+                    <div class="product-card">
+                        <div class="product-badge-wrap">
+                            <span class="badge-certified">LaptopWale Certified</span>
+                            <span class="badge-warranty"><i class="bi bi-shield-check"></i> 1-Year Warranty</span>
+                        </div>
+                        <div class="product-img-wrap">
+                            <img src="dynamic/uploads/images/1775828709_buy-dell-latitude-3420-i5-11th-gen-refurbished-laptop-india.jpg" alt="Dell Latitude 3420" />
+                        </div>
+                        <div class="product-category-text">Dell Commercial Series</div>
+                        <h3 class="product-title">Dell Latitude 3420 (Core i5 11th Gen)</h3>
+                        <div class="spec-chips">
+                            <span class="spec-chip"><i class="bi bi-cpu"></i> i5-1135G7</span>
+                            <span class="spec-chip"><i class="bi bi-memory"></i> 16GB DDR4</span>
+                            <span class="spec-chip"><i class="bi bi-device-ssd"></i> 512GB NVMe</span>
+                            <span class="spec-chip"><i class="bi bi-display"></i> 14" FHD IPS</span>
+                        </div>
+                        <div class="pricing-row">
+                            <span class="sale-price">â‚¹27,999</span>
+                            <span class="mrp-price">â‚¹75,000</span>
+                            <span class="discount-tag">62% OFF</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-secondary btn-card-action" onclick="showQuickSpecs('Dell Latitude 3420', 'Core i5 11th Gen 1135G7 Turbo up to 4.2GHz', '16GB DDR4 3200MHz', '512GB Ultra-Fast NVMe M.2 SSD', '14-inch Full HD Anti-Glare 1920x1080', 'â‚¹27,999', 'dynamic/uploads/images/1775828709_buy-dell-latitude-3420-i5-11th-gen-refurbished-laptop-india.jpg')">
+                                <i class="bi bi-eye"></i> Specs
+                            </button>
+                            <a href="https://wa.me/919309248726?text=I%20am%20interested%20in%20Dell%20Latitude%203420%20(â‚¹27,999)" target="_blank" class="btn btn-royal-primary btn-card-action">
+                                <i class="bi bi-whatsapp"></i> Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 2: Dell Latitude 3400 -->
+                <div class="col-lg-4 col-md-6 laptop-item" data-category="budget" data-budget="15k">
+                    <div class="product-card">
+                        <div class="product-badge-wrap">
+                            <span class="badge-certified">Best Budget Value</span>
+                            <span class="badge-warranty"><i class="bi bi-shield-check"></i> 6-Month Warranty</span>
+                        </div>
+                        <div class="product-img-wrap">
+                            <img src="dynamic/uploads/images/1782304333_dell%20latitute%203400.png" alt="Dell Latitude 3400" />
+                        </div>
+                        <div class="product-category-text">Dell Executive Series</div>
+                        <h3 class="product-title">Dell Latitude 3400 (Core i5 8th Gen)</h3>
+                        <div class="spec-chips">
+                            <span class="spec-chip"><i class="bi bi-cpu"></i> i5-8265U</span>
+                            <span class="spec-chip"><i class="bi bi-memory"></i> 8GB RAM</span>
+                            <span class="spec-chip"><i class="bi bi-device-ssd"></i> 256GB SSD</span>
+                            <span class="spec-chip"><i class="bi bi-battery-charging"></i> 4h+ Battery</span>
+                        </div>
+                        <div class="pricing-row">
+                            <span class="sale-price">â‚¹18,499</span>
+                            <span class="mrp-price">â‚¹54,000</span>
+                            <span class="discount-tag">65% OFF</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-secondary btn-card-action" onclick="showQuickSpecs('Dell Latitude 3400', 'Intel Core i5-8265U Quad Core', '8GB DDR4 (Upgradable to 32GB)', '256GB High-Speed SSD', '14.0 inch HD Anti-Glare Display', 'â‚¹18,499', 'dynamic/uploads/images/1782304333_dell%20latitute%203400.png')">
+                                <i class="bi bi-eye"></i> Specs
+                            </button>
+                            <a href="https://wa.me/919309248726?text=I%20am%20interested%20in%20Dell%20Latitude%203400%20(â‚¹18,499)" target="_blank" class="btn btn-royal-primary btn-card-action">
+                                <i class="bi bi-whatsapp"></i> Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 3: Lenovo ThinkPad T490 -->
+                <div class="col-lg-4 col-md-6 laptop-item" data-category="business" data-budget="30k">
+                    <div class="product-card">
+                        <div class="product-badge-wrap">
+                            <span class="badge-certified">Mil-Spec Durable</span>
+                            <span class="badge-warranty"><i class="bi bi-shield-check"></i> 1-Year Warranty</span>
+                        </div>
+                        <div class="product-img-wrap">
+                            <img src="dynamic/uploads/images/1775736779_1.png" alt="Lenovo ThinkPad T490" onerror="this.src='dynamic/uploads/images/1782304333_dell%20latitute%203400.png'" />
+                        </div>
+                        <div class="product-category-text">Lenovo ThinkPad Series</div>
+                        <h3 class="product-title">Lenovo ThinkPad T490 (Core i7 8th Gen)</h3>
+                        <div class="spec-chips">
+                            <span class="spec-chip"><i class="bi bi-cpu"></i> i7-8565U</span>
+                            <span class="spec-chip"><i class="bi bi-memory"></i> 16GB RAM</span>
+                            <span class="spec-chip"><i class="bi bi-device-ssd"></i> 512GB SSD</span>
+                            <span class="spec-chip"><i class="bi bi-keyboard"></i> Backlit Keys</span>
+                        </div>
+                        <div class="pricing-row">
+                            <span class="sale-price">â‚¹28,999</span>
+                            <span class="mrp-price">â‚¹88,000</span>
+                            <span class="discount-tag">67% OFF</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-secondary btn-card-action" onclick="showQuickSpecs('Lenovo ThinkPad T490', 'Intel Core i7-8565U Quad Core with vPro', '16GB DDR4 RAM', '512GB PCIe NVMe SSD', '14.0 inch Full HD IPS 300 nits', 'â‚¹28,999', 'dynamic/uploads/images/1775736779_1.png')">
+                                <i class="bi bi-eye"></i> Specs
+                            </button>
+                            <a href="https://wa.me/919309248726?text=I%20am%20interested%20in%20Lenovo%20ThinkPad%20T490%20(â‚¹28,999)" target="_blank" class="btn btn-royal-primary btn-card-action">
+                                <i class="bi bi-whatsapp"></i> Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 4: Apple MacBook Pro Retina -->
+                <div class="col-lg-4 col-md-6 laptop-item" data-category="apple" data-budget="40k">
+                    <div class="product-card">
+                        <div class="product-badge-wrap">
+                            <span class="badge-certified">Apple Flagship</span>
+                            <span class="badge-warranty"><i class="bi bi-shield-check"></i> 1-Year Warranty</span>
+                        </div>
+                        <div class="product-img-wrap">
+                            <img src="dynamic/uploads/images/1775737959_1.png" alt="Apple MacBook Pro" onerror="this.src='dynamic/uploads/images/1775828709_buy-dell-latitude-3420-i5-11th-gen-refurbished-laptop-india.jpg'" />
+                        </div>
+                        <div class="product-category-text">Apple Silicon / Pro</div>
+                        <h3 class="product-title">Apple MacBook Pro 13" Retina (Space Grey)</h3>
+                        <div class="spec-chips">
+                            <span class="spec-chip"><i class="bi bi-apple"></i> Core i5 / M-Chip</span>
+                            <span class="spec-chip"><i class="bi bi-memory"></i> 16GB Unified</span>
+                            <span class="spec-chip"><i class="bi bi-device-ssd"></i> 512GB SSD</span>
+                            <span class="spec-chip"><i class="bi bi-display"></i> Retina 2K</span>
+                        </div>
+                        <div class="pricing-row">
+                            <span class="sale-price">â‚¹39,999</span>
+                            <span class="mrp-price">â‚¹1,19,000</span>
+                            <span class="discount-tag">66% OFF</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-secondary btn-card-action" onclick="showQuickSpecs('Apple MacBook Pro 13 Retina', 'High Performance Core i5 / M Series', '16GB LPDDR4X', '512GB Ultra-Fast Apple SSD', '13.3-inch Retina Display with True Tone 2560x1600', 'â‚¹39,999', 'dynamic/uploads/images/1775737959_1.png')">
+                                <i class="bi bi-eye"></i> Specs
+                            </button>
+                            <a href="https://wa.me/919309248726?text=I%20am%20interested%20in%20Apple%20MacBook%20Pro%20(â‚¹39,999)" target="_blank" class="btn btn-royal-primary btn-card-action">
+                                <i class="bi bi-whatsapp"></i> Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 5: HP EliteBook 840 G6 -->
+                <div class="col-lg-4 col-md-6 laptop-item" data-category="business" data-budget="30k">
+                    <div class="product-card">
+                        <div class="product-badge-wrap">
+                            <span class="badge-certified">All-Aluminum Unibody</span>
+                            <span class="badge-warranty"><i class="bi bi-shield-check"></i> 1-Year Warranty</span>
+                        </div>
+                        <div class="product-img-wrap">
+                            <img src="dynamic/uploads/images/1775824159_3.png" alt="HP EliteBook 840 G6" onerror="this.src='dynamic/uploads/images/1782304333_dell%20latitute%203400.png'" />
+                        </div>
+                        <div class="product-category-text">HP Enterprise Elite</div>
+                        <h3 class="product-title">HP EliteBook 840 G6 (Core i5 8th Gen)</h3>
+                        <div class="spec-chips">
+                            <span class="spec-chip"><i class="bi bi-cpu"></i> i5-8365U</span>
+                            <span class="spec-chip"><i class="bi bi-memory"></i> 16GB DDR4</span>
+                            <span class="spec-chip"><i class="bi bi-device-ssd"></i> 256GB SSD</span>
+                            <span class="spec-chip"><i class="bi bi-volume-up"></i> Bang & Olufsen</span>
+                        </div>
+                        <div class="pricing-row">
+                            <span class="sale-price">â‚¹23,999</span>
+                            <span class="mrp-price">â‚¹74,000</span>
+                            <span class="discount-tag">67% OFF</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-secondary btn-card-action" onclick="showQuickSpecs('HP EliteBook 840 G6', 'Intel Core i5-8365U vPro Edition', '16GB DDR4 2666MHz', '256GB NVMe M.2 SSD', '14.0 inch Full HD Anti-Glare with Privacy Camera', 'â‚¹23,999', 'dynamic/uploads/images/1775824159_3.png')">
+                                <i class="bi bi-eye"></i> Specs
+                            </button>
+                            <a href="https://wa.me/919309248726?text=I%20am%20interested%20in%20HP%20EliteBook%20840%20G6%20(â‚¹23,999)" target="_blank" class="btn btn-royal-primary btn-card-action">
+                                <i class="bi bi-whatsapp"></i> Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop 6: Asus TUF / ROG Performance -->
+                <div class="col-lg-4 col-md-6 laptop-item" data-category="gaming" data-budget="40k">
+                    <div class="product-card">
+                        <div class="product-badge-wrap">
+                            <span class="badge-certified">High Graphics & 3D</span>
+                            <span class="badge-warranty"><i class="bi bi-shield-check"></i> 1-Year Warranty</span>
+                        </div>
+                        <div class="product-img-wrap">
+                            <img src="dynamic/uploads/images/1776147225_4.png" alt="Asus Gaming" onerror="this.src='dynamic/uploads/images/1775828709_buy-dell-latitude-3420-i5-11th-gen-refurbished-laptop-india.jpg'" />
+                        </div>
+                        <div class="product-category-text">Asus High Performance</div>
+                        <h3 class="product-title">Asus TUF Gaming (AMD Ryzen 7 + Dedicated GPU)</h3>
+                        <div class="spec-chips">
+                            <span class="spec-chip"><i class="bi bi-cpu"></i> Ryzen 7 Pro</span>
+                            <span class="spec-chip"><i class="bi bi-memory"></i> 16GB Dual-Ch</span>
+                            <span class="spec-chip"><i class="bi bi-gpu-card"></i> 4GB Dedicated</span>
+                            <span class="spec-chip"><i class="bi bi-speedometer2"></i> 144Hz Screen</span>
+                        </div>
+                        <div class="pricing-row">
+                            <span class="sale-price">â‚¹44,999</span>
+                            <span class="mrp-price">â‚¹89,990</span>
+                            <span class="discount-tag">50% OFF</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-secondary btn-card-action" onclick="showQuickSpecs('Asus TUF Gaming', 'AMD Ryzen 7 4800H Octa-Core 16 Threads', '16GB DDR4 3200MHz', '512GB PCIe NVMe SSD', '15.6 inch 144Hz IPS Level Gaming Display', 'â‚¹44,999', 'dynamic/uploads/images/1776147225_4.png')">
+                                <i class="bi bi-eye"></i> Specs
+                            </button>
+                            <a href="https://wa.me/919309248726?text=I%20am%20interested%20in%20Asus%20TUF%20Gaming%20(â‚¹44,999)" target="_blank" class="btn btn-royal-primary btn-card-action">
+                                <i class="bi bi-whatsapp"></i> Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. ðŸŒŸ AI FEATURE 2: INSTANT DEVICE VALUATION & BUYBACK (SELL LAPTOP / PHONE) -->
+    <section class="valuation-section" id="valuation">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="text-danger fw-bold text-uppercase" style="letter-spacing: 1px; font-size: 13px;">
+                        <i class="bi bi-lightning-charge-fill"></i> Instant Liquidity Engine
+                    </span>
+                    <h2 class="display-5 fw-bold text-white mb-3">Sell Old Laptop or Phone For Instant Cash / UPI</h2>
+                    <p class="text-white-50 fs-6 mb-4">
+                        Upgrade or liquidate your pre-owned devices at India's highest evaluated market buyback rate. Our AI valuation model instantly checks current processor generation, memory health, and market demand.
+                    </p>
+
+                    <div class="row g-3 text-white">
+                        <div class="col-sm-6 d-flex align-items-center gap-3">
+                            <div class="bg-danger rounded-circle p-2 fs-5"><i class="bi bi-check2"></i></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Instant UPI / Cash</h6>
+                                <small class="text-white-50">On-the-spot bank transfer</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 d-flex align-items-center gap-3">
+                            <div class="bg-danger rounded-circle p-2 fs-5"><i class="bi bi-box-seam"></i></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Free Doorstep Pickup</h6>
+                                <small class="text-white-50">Hassle-free verified pickup</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 d-flex align-items-center gap-3">
+                            <div class="bg-danger rounded-circle p-2 fs-5"><i class="bi bi-shield-lock"></i></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">100% Data Wiped</h6>
+                                <small class="text-white-50">DoD certified data sanitization</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 d-flex align-items-center gap-3">
+                            <div class="bg-danger rounded-circle p-2 fs-5"><i class="bi bi-gift"></i></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">+â‚¹2,500 Exchange Bonus</h6>
+                                <small class="text-white-50">When upgrading with us</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right AI Interactive Valuation Calculator -->
+                <div class="col-lg-6">
+                    <div class="valuation-card">
+                        <h4 class="text-white fw-bold mb-3"><i class="bi bi-calculator"></i> AI Instant Valuation Calculator</h4>
+                        
+                        <div class="row g-3">
+                            <!-- Device Category -->
+                            <div class="col-sm-6">
+                                <label class="small text-white-50 mb-1">Device Type</label>
+                                <select class="valuation-input" id="valDevice">
+                                    <option value="laptop" selected>Laptop (Windows / Mac)</option>
+                                    <option value="phone">Smartphone (iPhone / Android)</option>
+                                </select>
+                            </div>
+
+                            <!-- Brand -->
+                            <div class="col-sm-6">
+                                <label class="small text-white-50 mb-1">Brand</label>
+                                <select class="valuation-input" id="valBrand">
+                                    <option value="dell" selected>Dell</option>
+                                    <option value="hp">HP</option>
+                                    <option value="lenovo">Lenovo</option>
+                                    <option value="apple">Apple</option>
+                                    <option value="asus">Asus / Acer</option>
+                                </select>
+                            </div>
+
+                            <!-- Processor / Generation -->
+                            <div class="col-sm-6">
+                                <label class="small text-white-50 mb-1">Processor / Model Age</label>
+                                <select class="valuation-input" id="valGen">
+                                    <option value="gen11">11th / 12th / 13th Gen (or M1/M2)</option>
+                                    <option value="gen8" selected>8th / 9th / 10th Gen Intel/Ryzen</option>
+                                    <option value="gen6">6th / 7th Gen Intel</option>
+                                    <option value="older">Older (4th / 5th Gen)</option>
+                                </select>
+                            </div>
+
+                            <!-- Condition -->
+                            <div class="col-sm-6">
+                                <label class="small text-white-50 mb-1">Physical Condition</label>
+                                <select class="valuation-input" id="valCondition">
+                                    <option value="flawless">Flawless (Like New, No Scratches)</option>
+                                    <option value="good" selected>Good (Normal Usage / Minor Wear)</option>
+                                    <option value="screenIssue">Screen / Battery issue</option>
+                                    <option value="dead">Dead / Motherboard issue</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Quote Output -->
+                        <div class="quote-box mt-4">
+                            <span class="text-white-50 small text-uppercase fw-bold">Estimated Instant Cash Payout:</span>
+                            <div class="quote-amount" id="estimatedQuote">â‚¹18,500 - â‚¹21,000</div>
+                            <small class="text-white-50 d-block mb-3">Includes Free Doorstep Pickup & Instant UPI Payout</small>
+                            
+                            <a id="claimCashBtn" href="https://wa.me/919309248726?text=Hello%20LaptopWale,%20I%20want%20to%20sell%20my%20laptop%20with%20estimated%20quote%20â‚¹18,500%20-%20â‚¹21,000" target="_blank" class="btn btn-royal-primary w-100 py-3 fw-bold">
+                                <i class="bi bi-wallet2"></i> Claim Instant Cash & Schedule Pickup
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. CERTIFIED CHIP-LEVEL WORKSHOP & LAB (FEATURING REAL STORE PHOTOS) -->
+    <section class="lab-section" id="repairs">
+        <div class="container">
+            <div class="row align-items-end mb-5">
+                <div class="col-lg-8">
+                    <span class="section-header-tag"><i class="bi bi-motherboard"></i> State-of-the-Art Repair Facility</span>
+                    <h2 class="section-main-title">Precision Chip-Level Engineering & Rework Lab</h2>
+                    <p class="text-muted mb-0">
+                        Unlike ordinary repair shops that replace entire boards for thousands, our certified micro-engineers diagnose and solder individual components at the micron level using BGA rework stations and stereoscopic microscopes.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                    <span class="badge bg-danger fs-6 px-3 py-2"><i class="bi bi-clock-history"></i> 2-Hour Express Service Available</span>
+                </div>
+            </div>
+
+            <!-- Real Workshop Photo Cards (From IMAGES Folder) -->
+            <div class="row g-4">
+                <!-- Photo 1: Microscope Soldering -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="lab-photo-card">
+                        <img src="IMAGES/IMG_0853.JPG.jpeg" alt="Precision Micro-Soldering" />
+                        <div class="lab-photo-overlay">
+                            <h4>Microscope Soldering</h4>
+                            <p>SMD resistor, capacitor & track level micro-soldering repairs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 2: BGA Rework Station -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="lab-photo-card">
+                        <img src="IMAGES/IMG_1100.JPG.jpeg" alt="CE Certified BGA Rework Station" />
+                        <div class="lab-photo-overlay">
+                            <h4>BGA Rework Station</h4>
+                            <p>Dedicated GPU & CPU reballing and precision IC replacement.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 3: Oscilloscope Diagnostic Bench -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="lab-photo-card">
+                        <img src="IMAGES/IMG_1132.JPG.jpeg" alt="Oscilloscope Circuit Testing" />
+                        <div class="lab-photo-overlay">
+                            <h4>Advanced Diagnostics</h4>
+                            <p>Digital oscilloscope & multimeter tracing on multi-layer PCBs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 4: Genuine Chipset Inventory -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="lab-photo-card">
+                        <img src="IMAGES/IMG_1116.JPG.jpeg" alt="OEM Chipsets & Processors" />
+                        <div class="lab-photo-overlay">
+                            <h4>OEM Chips Stock</h4>
+                            <p>Direct supply of genuine Intel, AMD & power controller ICs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lab Highlights Row -->
+            <div class="row g-3 mt-4 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-light rounded-3 border">
+                        <h4 class="text-danger fw-bold mb-1">98.4%</h4>
+                        <small class="text-muted fw-bold">Motherboard Recovery Rate</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-light rounded-3 border">
+                        <h4 class="text-dark fw-bold mb-1">90 Days</h4>
+                        <small class="text-muted fw-bold">Post-Repair Warranty</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-light rounded-3 border">
+                        <h4 class="text-success fw-bold mb-1">Zero Charge</h4>
+                        <small class="text-muted fw-bold">If Device Cannot Be Fixed</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-light rounded-3 border">
+                        <h4 class="text-primary fw-bold mb-1">15 Mins</h4>
+                        <small class="text-muted fw-bold">RAM & SSD Express Upgrade</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. ðŸŒŸ AI FEATURE 3: AI HARDWARE SYMPTOM DIAGNOSTIC & COST FORECASTER -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="diagnostic-card">
+                        <div class="text-center mb-4">
+                            <span class="section-header-tag"><i class="bi bi-robot"></i> Instant AI Triage</span>
+                            <h3 class="fw-bold text-dark">Hardware Symptom Diagnostic & Transparent Price Forecaster</h3>
+                            <p class="text-muted small">Select your laptop's symptom below to view root-cause analysis and estimated repair cost immediately.</p>
+                        </div>
+
+                        <!-- Symptom Buttons -->
+                        <div class="d-flex flex-wrap justify-content-center gap-2 mb-4" id="symptomButtonList">
+                            <button class="symptom-tag-btn active" onclick="diagnoseIssue('dead', this)">
+                                <i class="bi bi-power"></i> Completely Dead / No Power
+                            </button>
+                            <button class="symptom-tag-btn" onclick="diagnoseIssue('water', this)">
+                                <i class="bi bi-droplet-half"></i> Liquid / Water Damage
+                            </button>
+                            <button class="symptom-tag-btn" onclick="diagnoseIssue('display', this)">
+                                <i class="bi bi-tv"></i> No Display / Black Screen
+                            </button>
+                            <button class="symptom-tag-btn" onclick="diagnoseIssue('bsod', this)">
+                                <i class="bi bi-exclamation-triangle"></i> Blue Screen (BSOD) / Hanging
+                            </button>
+                            <button class="symptom-tag-btn" onclick="diagnoseIssue('overheat', this)">
+                                <i class="bi bi-wind"></i> Overheating / Loud Fan
+                            </button>
+                            <button class="symptom-tag-btn" onclick="diagnoseIssue('battery', this)">
+                                <i class="bi bi-battery-alert"></i> Battery Not Charging
+                            </button>
+                        </div>
+
+                        <!-- Diagnostic Output Box -->
+                        <div class="p-4 rounded-3 border bg-white" id="diagnosticResult">
+                            <div class="row align-items-center g-3">
+                                <div class="col-md-7">
+                                    <div class="d-flex align-items-center gap-2 mb-1">
+                                        <span class="badge bg-danger" id="diagTitle">Dead / No Power</span>
+                                        <span class="text-muted small">Diagnostic Confidence: <strong class="text-success">96%</strong></span>
+                                    </div>
+                                    <h5 class="fw-bold text-dark mb-2" id="diagCause">Suspected: 19V Rail Short-Circuit or Faulty Power Management IC</h5>
+                                    <p class="text-muted small mb-2" id="diagExplanation">
+                                        Often caused by voltage surges or charging port breakdown. Our chip-level engineers will trace the circuit with an oscilloscope and replace the blown MOSFET/IC rather than the costly full motherboard.
+                                    </p>
+                                    <div class="d-flex gap-3 small text-muted">
+                                        <span><i class="bi bi-clock text-danger"></i> Est. Time: <strong id="diagTime">2 - 4 Hours</strong></span>
+                                        <span><i class="bi bi-shield-check text-success"></i> Warranty: <strong>90 Days</strong></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 text-md-end text-center border-start-md ps-md-4">
+                                    <div class="text-muted small">Estimated Repair Cost:</div>
+                                    <div class="fs-2 fw-bold text-danger font-monospace" id="diagCost">â‚¹1,400 - â‚¹2,800</div>
+                                    <div class="small text-muted text-decoration-line-through">Brand Service Center Quote: â‚¹18,000+</div>
+                                    <a href="https://wa.me/919309248726?text=Hi%20LaptopWale,%20my%20laptop%20has%20Dead/No%20Power%20issue.%20Want%20to%20book%20inspection" target="_blank" class="btn btn-royal-primary btn-sm mt-2 px-3 py-2 w-100">
+                                        <i class="bi bi-whatsapp"></i> Book Free Diagnostic Pickup
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. SMARTPHONE & MULTI-DEVICE CARE HUB -->
+    <section class="py-5 bg-white" id="smartphones">
+        <div class="container">
+            <div class="row align-items-end mb-5">
+                <div class="col-md-8">
+                    <span class="section-header-tag"><i class="bi bi-phone"></i> All-In-One Tech Care</span>
+                    <h2 class="section-main-title">Smartphone & Tablet Services</h2>
+                    <p class="text-muted mb-0">
+                        Expert repair services for Apple iPhone, iPad, Samsung, OnePlus, Xiaomi and Google Pixel smartphones with genuine grade parts.
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                    <a href="https://wa.me/919309248726?text=Hello,%20I%20need%20smartphone%20repair%20service" target="_blank" class="btn btn-royal-outline">
+                        <i class="bi bi-phone-flip"></i> Inquire Smartphone Repair
+                    </a>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Service 1: Screen Replacement -->
+                <div class="col-md-4">
+                    <div class="smartphone-card">
+                        <div class="service-icon-wrap"><i class="bi bi-aspect-ratio"></i></div>
+                        <h4 class="fw-bold mb-2">Original Screen & OLED Replacement</h4>
+                        <p class="text-muted small mb-3">Same-day display replacement with true-tone calibration and 100% touch responsiveness.</p>
+                        <span class="badge bg-light text-dark border">iPhone â€¢ Samsung â€¢ OnePlus</span>
+                    </div>
+                </div>
+
+                <!-- Service 2: Battery Health & Overhaul -->
+                <div class="col-md-4">
+                    <div class="smartphone-card">
+                        <div class="service-icon-wrap"><i class="bi bi-battery-charging"></i></div>
+                        <h4 class="fw-bold mb-2">Battery Replacement & Health 100%</h4>
+                        <p class="text-muted small mb-3">High-capacity CE-certified battery cells installed with health indicator enabled.</p>
+                        <span class="badge bg-light text-dark border">30-Minute Express Replacement</span>
+                    </div>
+                </div>
+
+                <!-- Service 3: Motherboard & Water Revival -->
+                <div class="col-md-4">
+                    <div class="smartphone-card">
+                        <div class="service-icon-wrap"><i class="bi bi-cpu"></i></div>
+                        <h4 class="fw-bold mb-2">Water Damage & IC Level Repair</h4>
+                        <p class="text-muted small mb-3">Ultrasonic PCB cleaning, charging IC fix, audio codec repair, and dead phone recovery.</p>
+                        <span class="badge bg-light text-dark border">No Data Loss Guarantee</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. TECH ACCESSORIES & UPGRADES (FROM DYNAMIC/UPLOADS/IMAGES) -->
+    <section class="py-5" id="accessories" style="background-color: #f8fafc;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-header-tag"><i class="bi bi-plug"></i> Genuine Essentials</span>
+                <h2 class="section-main-title">High-Speed Accessories & Upgrade Kits</h2>
+                <p class="text-muted max-w-700 mx-auto">Boost your existing laptop's productivity with genuine high-performance peripherals and storage kits.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Accessory 1: Techie Breeze Wireless Mouse -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <img src="dynamic/uploads/images/1778488242_Techie%20Breeze%20Wireless%20Mouse%20.jpg" alt="Techie Wireless Mouse" />
+                        </div>
+                        <div class="product-category-text">Ergonomic Peripherals</div>
+                        <h4 class="product-title" style="font-size: 0.95rem;">Techie Breeze Silent Wireless Mouse</h4>
+                        <div class="pricing-row">
+                            <span class="sale-price">â‚¹499</span>
+                            <span class="mrp-price">â‚¹1,299</span>
+                        </div>
+                        <a href="https://wa.me/919309248726?text=I%20want%20to%20buy%20Techie%20Wireless%20Mouse%20(â‚¹499)" target="_blank" class="btn btn-royal-primary btn-card-action">
+                            <i class="bi bi-cart"></i> Buy Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Accessory 2: USB 3.0 Transparent Enclosure -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <img src="dynamic/uploads/images/1778491197_Techie%20USB%203.0%20Transparent%20External%20Enclosure%20for%202.5%E2%80%9D%20SATA%20SSD_HDD.png" alt="USB 3.0 Enclosure" />
+                        </div>
+                        <div class="product-category-text">Storage Solutions</div>
+                        <h4 class="product-title" style="font-size: 0.95rem;">Techie USB 3.0 External SSD Enclosure</h4>
+                        <div class="pricing-row">
+                            <span class="sale-price">â‚¹549</span>
+                            <span class="mrp-price">â‚¹1,499</span>
+                        </div>
+                        <a href="https://wa.me/919309248726?text=I%20want%20to%20buy%20USB%203.0%20SSD%20Enclosure%20(â‚¹549)" target="_blank" class="btn btn-royal-primary btn-card-action">
+                            <i class="bi bi-cart"></i> Buy Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Accessory 3: HDMI to VGA Converter -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <img src="dynamic/uploads/images/1778487964_Techie%20HDMI%20to%20VGA%20Converter%20%E2%80%93%201080P%20Full%20HD.jpg" alt="HDMI to VGA Converter" />
+                        </div>
+                        <div class="product-category-text">Display Cables</div>
+                        <h4 class="product-title" style="font-size: 0.95rem;">Techie HDMI to VGA 1080P Full HD Converter</h4>
+                        <div class="pricing-row">
+                            <span class="sale-price">â‚¹349</span>
+                            <span class="mrp-price">â‚¹899</span>
+                        </div>
+                        <a href="https://wa.me/919309248726?text=I%20want%20to%20buy%20HDMI%20to%20VGA%20Converter%20(â‚¹349)" target="_blank" class="btn btn-royal-primary btn-card-action">
+                            <i class="bi bi-cart"></i> Buy Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Accessory 4: Second HDD Caddy -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <img src="dynamic/uploads/images/1778495435_second%20HDD%20caddy.jpg" alt="Second HDD Caddy" />
+                        </div>
+                        <div class="product-category-text">Dual Drive Upgrades</div>
+                        <h4 class="product-title" style="font-size: 0.95rem;">Universal 9.5mm / 12.7mm HDD Caddy</h4>
+                        <div class="pricing-row">
+                            <span class="sale-price">â‚¹299</span>
+                            <span class="mrp-price">â‚¹799</span>
+                        </div>
+                        <a href="https://wa.me/919309248726?text=I%20want%20to%20buy%20HDD%20Caddy%20(â‚¹299)" target="_blank" class="btn btn-royal-primary btn-card-action">
+                            <i class="bi bi-cart"></i> Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. WHY CHOOSE LAPTOPWALE & QUALITY ASSURANCE -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-header-tag"><i class="bi bi-patch-check"></i> Uncompromising Standard</span>
+                <h2 class="section-main-title">Why 50,000+ Indians Trust LaptopWale</h2>
+            </div>
+
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="p-4 rounded-4 bg-light h-100 border">
+                        <i class="bi bi-award fs-1 text-danger mb-3 d-block"></i>
+                        <h5 class="fw-bold">45-Point Certified</h5>
+                        <p class="text-muted small mb-0">Motherboard, battery degradation, screen pixels, hinges, and thermals stress-tested.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 rounded-4 bg-light h-100 border">
+                        <i class="bi bi-arrow-repeat fs-1 text-danger mb-3 d-block"></i>
+                        <h5 class="fw-bold">7-Day Replacement</h5>
+                        <p class="text-muted small mb-0">Zero questions asked doorstep exchange if you're not completely in love with your machine.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 rounded-4 bg-light h-100 border">
+                        <i class="bi bi-shield-shaded fs-1 text-danger mb-3 d-block"></i>
+                        <h5 class="fw-bold">Up to 1-Year Warranty</h5>
+                        <p class="text-muted small mb-0">Enjoy total peace of mind with our dedicated pan-India service network & in-house lab.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 rounded-4 bg-light h-100 border">
+                        <i class="bi bi-box2-heart fs-1 text-danger mb-3 d-block"></i>
+                        <h5 class="fw-bold">Safe & Insured Shipping</h5>
+                        <p class="text-muted small mb-0">Delivered in heavy-duty 5-layer shockproof inflatable air cushions straight to your door.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14. STORE LOCATION & CONTACT / BOOKING -->
+    <section class="py-5 bg-light" id="contact">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <span class="section-header-tag">Visit Our Experience Center</span>
+                    <h2 class="section-main-title">Touch, Feel & Test Before You Buy</h2>
+                    <p class="text-muted mb-4">
+                        Walk into our tech studio, test our laptops on live coding environments or games, speak directly with our senior hardware engineers, or get your existing device inspected free of charge.
+                    </p>
+
+                    <div class="d-flex flex-column gap-3 mb-4">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="bg-white p-3 rounded-circle shadow-sm text-danger"><i class="bi bi-geo-alt-fill fs-5"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Tech Life & LaptopWale Experience Store</h6>
+                                <small class="text-muted">Serving Pune, Indore, Bhopal, Jaipur & Pan-India Dispatch</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="bg-white p-3 rounded-circle shadow-sm text-danger"><i class="bi bi-telephone-fill fs-5"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Hotline & WhatsApp Support</h6>
+                                <small class="text-muted"><a href="tel:+919309248726" class="text-decoration-none text-dark fw-bold">+91 93092 48726</a> (10:00 AM - 9:00 PM Daily)</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="bg-white p-3 rounded-circle shadow-sm text-danger"><i class="bi bi-envelope-fill fs-5"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Official Email</h6>
+                                <small class="text-muted">support@laptopwale.in</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="bg-white p-3 rounded-circle shadow-sm text-danger"><i class="bi bi-instagram fs-5"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Follow on Instagram</h6>
+                                <small class="text-muted"><a href="https://www.instagram.com/tech_life_07_?stkn=MWQ5ZnA5N3UwZDFvZw==" target="_blank" class="text-decoration-none text-danger fw-bold">@tech_life_07_</a> • Daily stock unboxings, testing & live chip repair reels</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact / Consultation Form -->
+                <div class="col-lg-6">
+                    <div class="p-4 bg-white rounded-4 shadow-sm border">
+                        <h4 class="fw-bold mb-3">Request a Callback / Store Appointment</h4>
+                        <form onsubmit="handleContactSubmit(event)">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label class="small text-muted mb-1">Your Full Name</label>
+                                    <input type="text" class="form-control" id="contactName" placeholder="e.g. Rahul Sharma" required />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="small text-muted mb-1">Phone / WhatsApp</label>
+                                    <input type="tel" class="form-control" id="contactPhone" placeholder="+91 98765 43210" required />
+                                </div>
+                                <div class="col-12">
+                                    <label class="small text-muted mb-1">I am interested in</label>
+                                    <select class="form-select" id="contactService">
+                                        <option value="buy">Buying a Refurbished Laptop</option>
+                                        <option value="sell">Selling / Exchanging an Old Device</option>
+                                        <option value="repair">Motherboard / Chip-Level Repair</option>
+                                        <option value="phone">Smartphone Screen / Battery Service</option>
+                                        <option value="corporate">Bulk Corporate / Student Lab Requirement</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="small text-muted mb-1">Any Specific Requirement or Model?</label>
+                                    <textarea class="form-control" id="contactNotes" rows="3" placeholder="Tell us what you are looking for (e.g., budget under 25k, i5 processor, quick delivery)..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-royal-primary w-100 py-3 fw-bold">
+                                        <i class="bi bi-send-fill"></i> Submit Inquiry
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 15. ROYAL FOOTER -->
+    <footer class="royal-footer">
+        <div class="container">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="new%20images/newlogo.png" alt="Tech Life" style="height: 44px; filter: brightness(0) invert(1);" />
+                    </div>
+                    <p class="text-muted small mb-4">
+                        LaptopWale & Tech Life are India's premier certified refurbished tech network and precision chip-level hardware engineering lab. Empowering students, coders, businesses and creators with enterprise-grade machines at half the price.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a href="https://www.instagram.com/tech_life_07_?stkn=MWQ5ZnA5N3UwZDFvZw==" target="_blank" class="btn btn-sm btn-outline-light rounded-circle" title="Instagram @tech_life_07_"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/919309248726" target="_blank" class="btn btn-sm btn-outline-light rounded-circle" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="tel:+919309248726" class="btn btn-sm btn-outline-light rounded-circle" title="Call Us"><i class="bi bi-telephone"></i></a>
+                        <a href="mailto:support@laptopwale.in" class="btn btn-sm btn-outline-light rounded-circle" title="Email"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-heading">Top Categories</h5>
+                    <ul class="footer-links">
+                        <li><a href="#laptops">Dell Latitude Series</a></li>
+                        <li><a href="#laptops">Lenovo ThinkPads</a></li>
+                        <li><a href="#laptops">HP EliteBooks</a></li>
+                        <li><a href="#laptops">Apple MacBooks</a></li>
+                        <li><a href="#laptops">High Graphic Rigs</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <h5 class="footer-heading">Engineering Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#repairs">BGA Reballing & GPU Rework</a></li>
+                        <li><a href="#repairs">Dead Motherboard Tracing</a></li>
+                        <li><a href="#repairs">Liquid Damage Recovery</a></li>
+                        <li><a href="#smartphones">iPhone & Smartphone Repairs</a></li>
+                        <li><a href="#valuation">Instant AI Laptop Buyback</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 class="footer-heading">Direct Helpline</h5>
+                    <p class="text-muted small mb-2"><i class="bi bi-headset text-danger"></i> Call / WhatsApp: +91 93092 48726</p>
+                    <p class="text-muted small mb-2"><i class="bi bi-geo-alt text-danger"></i> Nationwide Insured Express Courier</p>
+                    <p class="text-muted small mb-0"><i class="bi bi-shield-check text-success"></i> 100% Secure Payments via UPI, Cards & NetBanking</p>
+                </div>
+            </div>
+
+            <div class="pt-4 border-top border-secondary border-opacity-25 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <small class="text-muted">Â© 2026 LaptopWale & Tech Life. All Rights Reserved.</small>
+                <div class="d-flex gap-3">
+                    <span class="badge bg-danger">Single Page Demo Preview</span>
+                    <span class="badge bg-dark border">45-Point Certified Quality</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 16. LIVE SOCIAL PROOF TICKER TOAST -->
+    <div class="live-purchase-toast" id="liveToast">
+        <div class="toast-user-avatar" id="toastAvatar">A</div>
+        <div>
+            <div class="d-flex align-items-center gap-2">
+                <strong class="text-dark small" id="toastName">Arjun S. (Jaipur)</strong>
+                <span class="badge bg-success p-1" style="font-size: 9px;"><i class="bi bi-check-lg"></i> Verified</span>
+            </div>
+            <div class="text-muted small" id="toastAction" style="font-size: 12px;">Just purchased Dell Latitude 3420 i5</div>
+            <small class="text-muted" style="font-size: 10px;" id="toastTime">3 minutes ago</small>
+        </div>
+    </div>
+
+    <!-- 17. ðŸŒŸ AI FEATURE 4: TECHGENIE FLOATING AI ASSISTANT -->
+    <div class="ai-chat-launcher" onclick="toggleTechGenie()" title="Chat with LaptopWale AI">
+        <i class="bi bi-chat-dots-fill"></i>
+    </div>
+
+    <div class="ai-chat-window" id="techGenieWindow">
+        <div class="chat-header">
+            <div class="d-flex align-items-center gap-2">
+                <div class="bg-danger text-white rounded-circle p-1 px-2 fw-bold" style="font-size: 12px;"><i class="bi bi-robot"></i></div>
+                <div>
+                    <h6 class="mb-0 fw-bold text-white" style="font-size: 14px;">TechGenie AI Assistant</h6>
+                    <small class="text-success fw-bold" style="font-size: 11px;">â— Online | LaptopWale</small>
+                </div>
+            </div>
+            <button class="btn btn-sm btn-link text-white text-decoration-none" onclick="toggleTechGenie()"><i class="bi bi-x-lg"></i></button>
+        </div>
+
+        <div class="chat-body" id="chatBody">
+            <div class="chat-msg bot">
+                ðŸ‘‹ Hello! I am <strong>TechGenie</strong>, your LaptopWale AI consultant. How can I help you today?
+                <div class="mt-2">
+                    <button class="chat-chip-btn" onclick="sendPrompt('Show best laptops under 25k')">Laptops under 25K</button>
+                    <button class="chat-chip-btn" onclick="sendPrompt('How much for my old laptop?')">Sell My Laptop</button>
+                    <button class="chat-chip-btn" onclick="sendPrompt('Can you fix dead motherboard?')">Motherboard Repair</button>
+                    <button class="chat-chip-btn" onclick="sendPrompt('Instagram Reels @tech_life_07_')">Instagram Reels</button>
+                    <button class="chat-chip-btn" onclick="sendPrompt('Connect to human on WhatsApp')">Talk to Human</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-footer">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Ask about laptop specs, stock, repairs..." onkeypress="if(event.key==='Enter') sendUserMessage()" />
+            <button class="btn btn-danger btn-sm rounded-circle px-2" onclick="sendUserMessage()"><i class="bi bi-arrow-up"></i></button>
+        </div>
+    </div>
+
+    <!-- 18. MODAL FOR QUICK VIEW SPECS -->
+    <div class="modal fade" id="quickSpecsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header border-bottom-0 pb-0">
+                    <span class="badge bg-danger">Grade A+ Certified</span>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-2 text-center">
+                    <img id="modalImg" src="" alt="Laptop Specs" class="img-fluid rounded-3 mb-3 p-2 bg-light" style="max-height: 200px;" />
+                    <h4 class="fw-bold text-dark mb-3" id="modalTitle">Laptop Name</h4>
+                    <div class="text-start bg-light p-3 rounded-3 mb-3 small">
+                        <div class="mb-2"><strong>Processor:</strong> <span id="modalCpu"></span></div>
+                        <div class="mb-2"><strong>Memory (RAM):</strong> <span id="modalRam"></span></div>
+                        <div class="mb-2"><strong>Storage:</strong> <span id="modalStorage"></span></div>
+                        <div><strong>Display:</strong> <span id="modalDisplay"></span></div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fs-3 fw-bold text-danger font-monospace" id="modalPrice"></span>
+                        <a id="modalWaBtn" href="" target="_blank" class="btn btn-royal-primary">
+                            <i class="bi bi-whatsapp"></i> Inquire via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Interactive Logic Script -->
+    <script>
+        // 1. Switch Hero Banner (Red vs Cosmic Silver)
+        function switchHeroBanner(theme) {
+            const banner = document.getElementById('heroBannerImg');
+            const btnRed = document.getElementById('btnBannerRed');
+            const btnCosmic = document.getElementById('btnBannerCosmic');
+            
+            if (theme === 'red') {
+                banner.src = 'IMAGES/h4.png';
+                btnRed.classList.add('active');
+                btnCosmic.classList.remove('active');
+            } else {
+                banner.src = 'new%20images/h11.png';
+                btnCosmic.classList.add('active');
+                btnRed.classList.remove('active');
+            }
+        }
+
+        // 2. AI Feature 1: Matchmaker Calculation
+        const aiDatabase = {
+            coding: {
+                title: "Lenovo ThinkPad T490 (Core i7 8th Gen / 16GB / 512GB SSD)",
+                reason: "Ranked #1 for programmers: legendary spill-resistant keyboard, 16GB dual-channel memory for Docker/VS Code, and military-spec thermal cooling.",
+                price: "â‚¹28,999",
+                mrp: "â‚¹88,000",
+                img: "dynamic/uploads/images/1775736779_1.png",
+                score: "99% Compatibility Match",
+                specs: ["i7-8565U Quad Core", "16GB RAM", "512GB NVMe SSD", "Backlit Keyboard"]
+            },
+            business: {
+                title: "Dell Latitude 3420 (Core i5 11th Gen / 16GB / 512GB SSD)",
+                reason: "Executive daily driver with 11th Gen Intel Iris Xe graphics, enterprise security TPM 2.0, crystal clear FHD display, and 8+ hour battery endurance.",
+                price: "â‚¹27,999",
+                mrp: "â‚¹75,000",
+                img: "dynamic/uploads/images/1775828709_buy-dell-latitude-3420-i5-11th-gen-refurbished-laptop-india.jpg",
+                score: "98% Compatibility Match",
+                specs: ["i5-1135G7", "16GB DDR4", "512GB NVMe SSD", "14\" FHD Anti-Glare"]
+            },
+            design: {
+                title: "Apple MacBook Pro 13\" Retina (16GB RAM / 512GB SSD)",
+                reason: "Ideal for video editors and creators: 100% DCI-P3 color gamut Retina display, dual cooling fans, and studio-grade microphone array.",
+                price: "â‚¹39,999",
+                mrp: "â‚¹1,19,000",
+                img: "dynamic/uploads/images/1775737959_1.png",
+                score: "97% Compatibility Match",
+                specs: ["Retina 2K Display", "16GB RAM", "512GB High-Speed SSD", "Thunderbolt 3"]
+            },
+            gaming: {
+                title: "Asus TUF Gaming (AMD Ryzen 7 + Dedicated Graphics)",
+                reason: "144Hz high refresh rate panel, dual-fan anti-dust cooling system, and multi-core Ryzen 7 power for AAA titles, Blender 3D, and streaming.",
+                price: "â‚¹44,999",
+                mrp: "â‚¹89,990",
+                img: "dynamic/uploads/images/1776147225_4.png",
+                score: "96% Compatibility Match",
+                specs: ["AMD Ryzen 7 Octa-Core", "16GB RAM", "Dedicated GPU", "144Hz IPS Screen"]
+            },
+            student: {
+                title: "Dell Latitude 3400 (Core i5 8th Gen / 8GB / 256GB SSD)",
+                reason: "Maximum value for students: light weight (1.6kg), durable chassis, smooth handling of Google Docs, Zoom, PDFs, and light programming.",
+                price: "â‚¹18,499",
+                mrp: "â‚¹54,000",
+                img: "dynamic/uploads/images/1782304333_dell%20latitute%203400.png",
+                score: "98% Budget Match",
+                specs: ["Core i5 8th Gen", "8GB RAM (Upgradable)", "256GB SSD", "HD Webcam"]
+            }
+        };
+
+        function runAiMatchmaker() {
+            const purpose = document.getElementById('aiPurpose').value;
+            const item = aiDatabase[purpose] || aiDatabase['business'];
+            
+            const resultBox = document.getElementById('aiResultBox');
+            document.getElementById('aiResultTitle').innerText = item.title;
+            document.getElementById('aiResultReason').innerText = item.reason;
+            document.getElementById('aiResultPrice').innerText = item.price;
+            document.getElementById('aiResultMrp').innerText = "MRP: " + item.mrp;
+            document.getElementById('aiResultImg').src = item.img;
+            document.getElementById('aiMatchScore').innerHTML = `<i class="bi bi-patch-check-fill"></i> ${item.score}`;
+            
+            const specsWrap = document.getElementById('aiResultSpecs');
+            specsWrap.innerHTML = item.specs.map(s => `<span class="badge bg-secondary">${s}</span>`).join(' ');
+            
+            document.getElementById('aiWhatsappBtn').href = `https://wa.me/919309248726?text=Hi%20LaptopWale,%20AI%20recommended%20${encodeURIComponent(item.title)}%20(${item.price})%20for%20me`;
+            
+            resultBox.style.display = 'block';
+            resultBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // 3. Filter Laptop Catalog
+        function filterCatalog(category, btn) {
+            const buttons = document.querySelectorAll('.filter-btn-pill');
+            buttons.forEach(b => b.classList.remove('active'));
+            if(btn) btn.classList.add('active');
+
+            const items = document.querySelectorAll('.laptop-item');
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function filterByBudget(bracket) {
+            const items = document.querySelectorAll('.laptop-item');
+            const targetSection = document.getElementById('laptops');
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+
+            const buttons = document.querySelectorAll('.filter-btn-pill');
+            buttons.forEach(b => b.classList.remove('active'));
+
+            items.forEach(item => {
+                if (item.getAttribute('data-budget') === bracket) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // 4. Quick Specs Modal
+        function showQuickSpecs(name, cpu, ram, storage, display, price, img) {
+            document.getElementById('modalTitle').innerText = name;
+            document.getElementById('modalCpu').innerText = cpu;
+            document.getElementById('modalRam').innerText = ram;
+            document.getElementById('modalStorage').innerText = storage;
+            document.getElementById('modalDisplay').innerText = display;
+            document.getElementById('modalPrice').innerText = price;
+            document.getElementById('modalImg').src = img;
+            document.getElementById('modalWaBtn').href = `https://wa.me/919309248726?text=I%20am%20interested%20in%20${encodeURIComponent(name)}%20(${price})`;
+
+            const modal = new bootstrap.Modal(document.getElementById('quickSpecsModal'));
+            modal.show();
+        }
+
+        // 5. AI Feature 2: Instant Buyback Valuation Calculator
+        function calculateValuation() {
+            const device = document.getElementById('valDevice').value;
+            const brand = document.getElementById('valBrand').value;
+            const gen = document.getElementById('valGen').value;
+            const condition = document.getElementById('valCondition').value;
+
+            let base = 20000;
+            if (device === 'phone') base = 14000;
+            if (brand === 'apple') base += 8000;
+            if (brand === 'dell' || brand === 'lenovo') base += 2000;
+
+            if (gen === 'gen11') base += 6000;
+            if (gen === 'gen8') base += 2000;
+            if (gen === 'gen6') base -= 4000;
+            if (gen === 'older') base -= 8000;
+
+            if (condition === 'flawless') base *= 1.15;
+            if (condition === 'screenIssue') base *= 0.70;
+            if (condition === 'dead') base *= 0.45;
+
+            const low = Math.round(base * 0.9 / 500) * 500;
+            const high = Math.round(base * 1.08 / 500) * 500;
+
+            const quoteText = `â‚¹${low.toLocaleString('en-IN')} - â‚¹${high.toLocaleString('en-IN')}`;
+            document.getElementById('estimatedQuote').innerText = quoteText;
+            document.getElementById('claimCashBtn').href = `https://wa.me/919309248726?text=Hello%20LaptopWale,%20I%20checked%20my%20device%20valuation%20(${device},%20${brand},%20${gen})%20and%20estimated%20quote%20is%20${quoteText}.%20Please%20schedule%20pickup.`;
+        }
+
+        ['valDevice', 'valBrand', 'valGen', 'valCondition'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.addEventListener('change', calculateValuation);
+        });
+
+        // 6. AI Feature 3: Hardware Symptom Diagnostic Triage
+        const diagnosticsData = {
+            dead: {
+                title: "Dead / No Power",
+                cause: "Suspected: 19V Rail Short-Circuit or Faulty Power Management IC",
+                explanation: "Commonly triggered by bad adapters or line surges. Our micro-technicians trace the shorted capacitor/MOSFET and replace it, avoiding the massive cost of a full motherboard swap.",
+                time: "2 - 4 Hours",
+                cost: "â‚¹1,400 - â‚¹2,800"
+            },
+            water: {
+                title: "Liquid / Water Damage",
+                cause: "Corrosion on High-Density PCB Traces & Under-BGA Shorts",
+                explanation: "Requires immediate ultrasonic isopropyl bath sanitization, micro-probe trace rebuilding, and thermal baking to avoid permanent board oxidization.",
+                time: "Same Day (4 Hours)",
+                cost: "â‚¹1,800 - â‚¹3,500"
+            },
+            display: {
+                title: "No Display / Black Screen",
+                cause: "EDP Flex Cable Disconnect, GPU Video Rail, or Backlight Fuse",
+                explanation: "We test on an external monitor first; if external works, we fix the LVDS/eDP backlight circuit or panel. If not, BGA reballing of the GPU is performed.",
+                time: "1 - 3 Hours",
+                cost: "â‚¹800 - â‚¹2,200"
+            },
+            bsod: {
+                title: "Blue Screen (BSOD) / Hanging",
+                cause: "NVMe SSD Bad Sectors, RAM Bit Errors or Corrupted BIOS Firmware",
+                explanation: "Full MemTest86 diagnostic, BIOS clean ME-region reflash via EEPROM programmer, and health assessment of storage drives.",
+                time: "1 - 2 Hours",
+                cost: "â‚¹600 - â‚¹1,500"
+            },
+            overheat: {
+                title: "Overheating / Loud Fan",
+                cause: "Dry Thermal Compound & Blocked Copper Heatpipe Fin Stack",
+                explanation: "Complete disassembly, ultrasonic cleaning of copper radiator, application of high-conductivity Arctic MX-4 thermal paste and silicone pads.",
+                time: "45 Minutes",
+                cost: "â‚¹499 - â‚¹899"
+            },
+            battery: {
+                title: "Battery Not Charging",
+                cause: "Charging Port Degradation, Intersil Charger IC or Dead Cells",
+                explanation: "Diagnostic testing of SMBus communication between battery BMS and Super I/O chip to pinpoint if battery or board charging circuit is at fault.",
+                time: "1 Hour",
+                cost: "â‚¹900 - â‚¹1,800"
+            }
+        };
+
+        function diagnoseIssue(key, btn) {
+            const buttons = document.querySelectorAll('.symptom-tag-btn');
+            buttons.forEach(b => b.classList.remove('active'));
+            if(btn) btn.classList.add('active');
+
+            const info = diagnosticsData[key];
+            if (!info) return;
+
+            document.getElementById('diagTitle').innerText = info.title;
+            document.getElementById('diagCause').innerText = info.cause;
+            document.getElementById('diagExplanation').innerText = info.explanation;
+            document.getElementById('diagTime').innerText = info.time;
+            document.getElementById('diagCost').innerText = info.cost;
+        }
+
+        // 7. Live Purchase Social Proof Ticker
+        const verifiedPurchases = [
+            { name: "Rahul S. (Pune)", product: "Bought Lenovo ThinkPad T490 i7", time: "2 minutes ago", initial: "R" },
+            { name: "Vikram M. (Indore)", product: "Bought Dell Latitude 3420 11th Gen", time: "6 minutes ago", initial: "V" },
+            { name: "Sneha P. (Bhopal)", product: "Repaired MacBook Screen (Express)", time: "9 minutes ago", initial: "S" },
+            { name: "Amit K. (Jaipur)", product: "Sold Old HP Laptop for â‚¹18,500 UPI", time: "14 minutes ago", initial: "A" },
+            { name: "Pooja D. (Ahmedabad)", product: "Bought Dell Latitude 3400 i5", time: "18 minutes ago", initial: "P" }
+        ];
+        let toastIdx = 0;
+        function cycleToast() {
+            const toast = document.getElementById('liveToast');
+            const data = verifiedPurchases[toastIdx];
+            document.getElementById('toastName').innerText = data.name;
+            document.getElementById('toastAction').innerText = data.product;
+            document.getElementById('toastTime').innerText = data.time;
+            document.getElementById('toastAvatar').innerText = data.initial;
+
+            toast.classList.add('active');
+            setTimeout(() => {
+                toast.classList.remove('active');
+            }, 5500);
+
+            toastIdx = (toastIdx + 1) % verifiedPurchases.length;
+        }
+        setTimeout(() => {
+            cycleToast();
+            setInterval(cycleToast, 16000);
+        }, 3000);
+
+        // 8. TechGenie AI Chatbot Assistant
+        function toggleTechGenie() {
+            const win = document.getElementById('techGenieWindow');
+            if (win.style.display === 'flex') {
+                win.style.display = 'none';
+            } else {
+                win.style.display = 'flex';
+                document.getElementById('chatInput').focus();
+            }
+        }
+
+        function sendPrompt(text) {
+            document.getElementById('chatInput').value = text;
+            sendUserMessage();
+        }
+
+        function sendUserMessage() {
+            const input = document.getElementById('chatInput');
+            const txt = input.value.trim();
+            if (!txt) return;
+
+            const chatBody = document.getElementById('chatBody');
+            
+            // Add user message
+            const userMsg = document.createElement('div');
+            userMsg.className = 'chat-msg user';
+            userMsg.innerText = txt;
+            chatBody.appendChild(userMsg);
+            input.value = '';
+            chatBody.scrollTop = chatBody.scrollHeight;
+
+            // Bot answer generator
+            setTimeout(() => {
+                const botMsg = document.createElement('div');
+                botMsg.className = 'chat-msg bot';
+
+                const lower = txt.toLowerCase();
+                if (lower.includes('25k') || lower.includes('under 25') || lower.includes('budget')) {
+                    botMsg.innerHTML = `For under â‚¹25,000, our best-selling certified laptop is the <strong>Dell Latitude 3400 (i5 8th Gen, 8GB/256GB SSD) at â‚¹18,499</strong> or the <strong>HP EliteBook 840 G6 at â‚¹23,999</strong>. Both come with warranty and brand charger!`;
+                } else if (lower.includes('sell') || lower.includes('old laptop') || lower.includes('cash')) {
+                    botMsg.innerHTML = `You can get an instant quote using our <a href="#valuation" onclick="toggleTechGenie()">AI Valuation Tool</a>! We provide doorstep pickup and instant UPI payment. What model is your laptop?`;
+                } else if (lower.includes('dead') || lower.includes('motherboard') || lower.includes('repair')) {
+                    botMsg.innerHTML = `Yes! Our certified workshop specializes in chip-level BGA rework and motherboard repairs under stereoscopic microscopes. Typical turnaround is just 2 to 4 hours with a 90-day warranty.`;
+                } else if (lower.includes('instagram') || lower.includes('reels') || lower.includes('video')) {
+                    botMsg.innerHTML = `Catch our daily refurbished stock unboxings and live chip-level motherboard repair videos on Instagram: <a href="https://www.instagram.com/tech_life_07_?stkn=MWQ5ZnA5N3UwZDFvZw==" target="_blank" class="fw-bold text-danger">@tech_life_07_</a>!`;
+                } else if (lower.includes('human') || lower.includes('whatsapp') || lower.includes('call')) {
+                    botMsg.innerHTML = `You can chat immediately with our senior technician on WhatsApp: <a href="https://wa.me/919309248726" target="_blank" class="fw-bold text-danger">+91 93092 48726</a>. We reply in under 3 minutes!`;
+                } else {
+                    botMsg.innerHTML = `Thank you for asking! We have Grade A+ laptops across Dell, HP, Lenovo ThinkPad and Apple MacBook, all covered with 45-point checks and 1-year warranty. Would you like to check out our <a href="#laptops" onclick="toggleTechGenie()">inventory</a> or talk on WhatsApp?`;
+                }
+
+                chatBody.appendChild(botMsg);
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }, 600);
+        }
+
+        // 9. Contact Form Submission
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('contactName').value;
+            const phone = document.getElementById('contactPhone').value;
+            const service = document.getElementById('contactService').value;
+            const notes = document.getElementById('contactNotes').value;
+
+            const waMsg = `Hi LaptopWale, inquiry from website:\nName: ${name}\nPhone: ${phone}\nInterest: ${service}\nNotes: ${notes}`;
+            window.open(`https://wa.me/919309248726?text=${encodeURIComponent(waMsg)}`, '_blank');
+        }
+    </script>
+</body>
+</html>
+
